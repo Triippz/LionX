@@ -1,15 +1,3 @@
 .body {
-    -fx-background-color: #bbe1fa;
-}
-
-.body-header {
-    -fx-background-color: #3282b8;
-}
-
-.page-title {
-    -fx-text-fill: #fbfafa;
-}
-
-.button {
-    -fx-background-color: WHITE;
+    -fx-background-color: #0A014F;
 }

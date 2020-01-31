@@ -1,46 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
 
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.text.Font?>
-<VBox fx:id="contentArea" prefHeight="580.0" prefWidth="774.0" styleClass="body-header" stylesheets="@../css/wallets.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.WalletsController">
-    <children>
-        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="774.0" styleClass="body-header">
-            <children>
-                <VBox alignment="CENTER_LEFT">
-                    <HBox.margin>
-                        <Insets left="10.0" />
-                    </HBox.margin>
-                    <children>
-                        <Label styleClass="page-title" text="Wallets" textFill="#fbfafa">
-                            <font>
-                                <Font name="Calibri Bold" size="28.0" />
-                            </font>
-                        </Label>
-                        <HBox />
-                    </children>
-                </VBox>
-                <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                    <HBox.margin>
-                        <Insets left="20.0" />
-                    </HBox.margin>
-                </HBox>
-            </children>
-            <VBox.margin>
-                <Insets />
-            </VBox.margin>
-            <padding>
-                <Insets bottom="10.0" top="10.0" />
-            </padding>
-        </HBox>
-        <HBox alignment="CENTER" prefHeight="300.0" prefWidth="774.0" styleClass="body" VBox.vgrow="ALWAYS">
-            <VBox.margin>
-                <Insets />
-            </VBox.margin>
-        </HBox>
-    </children>
-</VBox>
+<BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/wallets.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.WalletsController">
+
+</BorderPane>

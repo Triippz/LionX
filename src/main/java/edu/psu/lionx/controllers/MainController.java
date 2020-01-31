@@ -1,11 +1,13 @@
 package edu.psu.lionx.controllers;
 
 import com.jfoenix.controls.JFXButton;
+import edu.psu.lionx.utils.ViewRouter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.control.Alert;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 
@@ -15,14 +17,16 @@ import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 public class MainController implements Initializable {
 
+
+    public VBox settingsBar;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
-            Parent home = FXMLLoader.load(getClass().getResource("/fxml/Home.fxml"));
-            borderPane.setCenter(home);
+            ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.HOME, borderPane);
         } catch (IOException ex) {
             Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -33,16 +37,24 @@ public class MainController implements Initializable {
         // TODO Clean up into a router function
         var source = actionEvent.getSource();
 
-        if ( source == homeButton ) {
-            loadPage("/fxml/Home.fxml");
-        } else if ( source == settingsButton ) {
-            loadPage("/fxml/Settings.fxml");
-        } else if ( source == newsButton ) {
-            loadPage("/fxml/News.fxml");
-        } else if ( source == orderHistoryButton ) {
-            loadPage("/fxml/OrderHistory.fxml");
-        } else if ( source == walletButton ) {
-            loadPage("/fxml/Wallets.fxml");
+        try {
+            if (source == homeButton) {
+                ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.HOME, borderPane);
+            } else if (source == settingsButton) {
+                ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.SETTINGS, borderPane);
+            } else if (source == newsButton) {
+                ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.HOME, borderPane);
+            } else if (source == orderHistoryButton) {
+                ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.ORDER_HISTORY, borderPane);
+            } else if (source == walletsButton) {
+                ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.WALLETS, borderPane);
+            } else if (source == aboutButton)
+                ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.ABOUT, borderPane);
+        } catch (IOException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error Loading Page!");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
         }
     }
 
@@ -60,7 +72,7 @@ public class MainController implements Initializable {
     @FXML
     public JFXButton homeButton;
     @FXML
-    public JFXButton walletButton;
+    public JFXButton walletsButton;
     @FXML
     public JFXButton orderHistoryButton;
     @FXML
@@ -68,5 +80,5 @@ public class MainController implements Initializable {
     @FXML
     public JFXButton settingsButton;
     @FXML
-    public VBox settingsBar;
+    public JFXButton aboutButton;
 }

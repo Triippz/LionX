@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af1f1b76-787a-45be-a837-7293da3541ce" name="Default Changelist" comment="" />
+    <list default="true" id="af1f1b76-787a-45be-a837-7293da3541ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/AboutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/ViewRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/About.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/LionXApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/LionXApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/SettingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/news.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/order-history.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/order-history.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/settings.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/wallets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/wallets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/News.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/News.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/OrderHistory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/OrderHistory.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Settings.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Settings.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Wallets.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Wallets.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="FxmlFile" />
         <option value="CSS File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,21 +60,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.psu.lionx.controllers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/css" />
       <recent name="$PROJECT_DIR$/src/main/resources/edu/psu/lionx" />
       <recent name="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.psu.lionx.controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunManager">
@@ -108,6 +132,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579637451456</updated>
       <workItem from="1579637455446" duration="2268000" />
+      <workItem from="1580347671708" duration="913000" />
+      <workItem from="1580348909702" duration="2827000" />
     </task>
     <servers />
   </component>
@@ -119,29 +145,41 @@
       <screen x="-1440" y="-746" width="1440" height="2560" />
     </state>
     <state x="-1256" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1579637682636" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1579654543869">
+    <state x="653" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1580350003900">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1398" height="793" key="GridCell.Tab.0.bottom/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1579639755049" />
+    <state x="653" y="241" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1580350003900" />
+    <state width="1398" height="294" key="GridCell.Tab.0.bottom" timestamp="1580396877823">
+      <screen x="-1440" y="-746" width="1440" height="2560" />
+    </state>
+    <state width="1398" height="294" key="GridCell.Tab.0.bottom/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877823" />
     <state width="1398" height="793" key="GridCell.Tab.0.bottom/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670639" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1579654543869" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1579654543867">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1580350949488" />
+    <state width="1398" height="294" key="GridCell.Tab.0.center" timestamp="1580396877822">
+      <screen x="-1440" y="-746" width="1440" height="2560" />
     </state>
-    <state width="1398" height="793" key="GridCell.Tab.0.center/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1579639755046" />
+    <state width="1398" height="294" key="GridCell.Tab.0.center/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877822" />
     <state width="1398" height="793" key="GridCell.Tab.0.center/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670636" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1579654543867" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1579654543866">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1580350949477" />
+    <state width="1398" height="294" key="GridCell.Tab.0.left" timestamp="1580396877821">
+      <screen x="-1440" y="-746" width="1440" height="2560" />
     </state>
-    <state width="1398" height="793" key="GridCell.Tab.0.left/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1579639755045" />
+    <state width="1398" height="294" key="GridCell.Tab.0.left/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877821" />
     <state width="1398" height="793" key="GridCell.Tab.0.left/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670635" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1579654543866" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1579654543868">
+    <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1580350949452" />
+    <state width="1398" height="294" key="GridCell.Tab.0.right" timestamp="1580396877823">
+      <screen x="-1440" y="-746" width="1440" height="2560" />
+    </state>
+    <state width="1398" height="294" key="GridCell.Tab.0.right/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877823" />
+    <state width="1398" height="793" key="GridCell.Tab.0.right/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670637" />
+    <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1580350949483" />
+    <state x="517" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1580347671616">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1398" height="793" key="GridCell.Tab.0.right/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1579639755048" />
-    <state width="1398" height="793" key="GridCell.Tab.0.right/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670637" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1579654543868" />
+    <state x="517" y="357" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580347671616" />
+    <state x="546" y="148" key="refactoring.ChangeSignatureDialog" timestamp="1580350216530">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="546" y="148" key="refactoring.ChangeSignatureDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580350216530" />
   </component>
 </project>

@@ -1,89 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<!--<?import org.controlsfx.glyphfont.Glyph?>-->
-<?import com.jfoenix.controls.JFXButton?>
 
-<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-            minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1200.0" styleClass="main"
-            stylesheets="@../css/main.css"
-            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="edu.psu.lionx.controllers.MainController">
+<!--<?import org.controlsfx.glyphfont.Glyph?>-->
+
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1200.0" styleClass="main" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.MainController">
     <left>
-        <VBox prefHeight="400.0" prefWidth="177.0" styleClass="sidebar" BorderPane.alignment="CENTER"
-              fx:id="settingsBar">
+        <VBox fx:id="settingsBar" prefHeight="400.0" prefWidth="177.0" styleClass="sidebar" BorderPane.alignment="CENTER">
             <children>
-                <HBox prefHeight="100.0" prefWidth="200.0" styleClass="sidebar-btn">
-                    <children>
-                        <JFXButton fx:id="homeButton" onAction="#onMenuButtonClick" styleClass="trans-button"
-                                   text="Home">
-                            <graphic>
-                                <!--                        <Glyph fontFamily="FontAwesome" icon="HOME" />-->
-                            </graphic>
-                            <HBox.margin>
-                                <Insets left="20.0"/>
-                            </HBox.margin>
-                        </JFXButton>
-                    </children>
-                    <VBox.margin>
-                        <Insets top="30.0"/>
-                    </VBox.margin>
-                </HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" styleClass="sidebar-btn">
-                    <children>
-                        <JFXButton fx:id="walletButton" onAction="#onMenuButtonClick" styleClass="trans-button"
-                                   text="Wallets">
-                            <graphic>
-                                <!--                        <Glyph fontFamily="FontAwesome" icon="HOME" />-->
-                            </graphic>
-                            <HBox.margin>
-                                <Insets left="20.0"/>
-                            </HBox.margin>
-                        </JFXButton>
-                    </children>
-                </HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" styleClass="sidebar-btn">
-                    <children>
-                        <JFXButton fx:id="orderHistoryButton" onAction="#onMenuButtonClick" styleClass="trans-button"
-                                   text="Order History">
-                            <graphic>
-                                <!--                        <Glyph fontFamily="FontAwesome" icon="HOME" />-->
-                            </graphic>
-                            <HBox.margin>
-                                <Insets left="20.0"/>
-                            </HBox.margin>
-                        </JFXButton>
-                    </children>
-                </HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" styleClass="sidebar-btn">
-                    <children>
-                        <JFXButton fx:id="newsButton" onAction="#onMenuButtonClick" styleClass="trans-button"
-                                   text="News">
-                            <graphic>
-                                <!--                        <Glyph fontFamily="FontAwesome" icon="HOME" />-->
-                            </graphic>
-                            <HBox.margin>
-                                <Insets left="20.0"/>
-                            </HBox.margin>
-                        </JFXButton>
-                    </children>
-                </HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" styleClass="sidebar-btn">
-                    <children>
-                        <JFXButton fx:id="settingsButton" onAction="#onMenuButtonClick" styleClass="trans-button"
-                                   text="Settings">
-                            <graphic>
-                                <!--                        <Glyph fontFamily="FontAwesome" icon="HOME" />-->
-                            </graphic>
-                            <HBox.margin>
-                                <Insets left="20.0"/>
-                            </HBox.margin>
-                        </JFXButton>
-                    </children>
-                </HBox>
+            <JFXButton fx:id="homeButton" onAction="#onMenuButtonClick" prefHeight="100.0" prefWidth="200.0" text="Home" textFill="#fcfcfc">
+               <styleClass>
+                  <String fx:value="sidebar-btn" />
+                  <String fx:value="trans-button" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="walletsButton" onAction="#onMenuButtonClick" prefHeight="100.0" prefWidth="200.0" text="Wallets" textFill="#fcfcfc">
+               <styleClass>
+                  <String fx:value="sidebar-btn" />
+                  <String fx:value="trans-button" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="orderHistoryButton" onAction="#onMenuButtonClick" prefHeight="100.0" prefWidth="200.0" text="Order History" textFill="#fcfcfc">
+               <styleClass>
+                  <String fx:value="sidebar-btn" />
+                  <String fx:value="trans-button" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="newsButton" onAction="#onMenuButtonClick" prefHeight="100.0" prefWidth="200.0" text="News" textFill="#fcfcfc">
+               <styleClass>
+                  <String fx:value="sidebar-btn" />
+                  <String fx:value="trans-button" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="settingsButton" onAction="#onMenuButtonClick" prefHeight="100.0" prefWidth="200.0" text="Settings" textFill="#fcfcfc">
+               <styleClass>
+                  <String fx:value="sidebar-btn" />
+                  <String fx:value="trans-button" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="aboutButton" onAction="#onMenuButtonClick" prefHeight="100.0" prefWidth="200.0" text="About" textFill="#fcfcfc">
+               <styleClass>
+                  <String fx:value="sidebar-btn" />
+                  <String fx:value="trans-button" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </JFXButton>
             </children>
         </VBox>
     </left>
