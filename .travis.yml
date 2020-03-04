@@ -1,4 +1,4 @@
 language: java
 jdk: openjdk11
 sudo: false
-script: mvn clean test
+script: mvn clean verify

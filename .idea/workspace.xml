@@ -61,6 +61,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Mark's" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -219,10 +224,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Maven.LionX [javafx:run]" />
         <item itemvalue="Maven.LionX [test]" />
+        <item itemvalue="Maven.LionX [javafx:run]" />
         <item itemvalue="JUnit.UserTest.save" />
         <item itemvalue="JUnit.UserTest.delete" />
+        <item itemvalue="Maven.LionX [javafx:run]" />
       </list>
     </recent_temporary>
   </component>
