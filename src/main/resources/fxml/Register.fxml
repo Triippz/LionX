@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1200.0" styleClass="main" stylesheets="@../css/register.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.RegisterController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="right-body" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fitHeight="464.0" fitWidth="553.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/symbol.png" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Label styleClass="right-title-text-field" text="LionX Cryptocurrency Trader" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets top="50.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </top>
+      </BorderPane>
+   </center>
+   <left>
+      <BorderPane prefHeight="620.0" prefWidth="418.0" styleClass="left-body" BorderPane.alignment="CENTER">
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="left-body-center" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="70.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label text="Registration">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="userNameTF" promptText="Username">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="49.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="password1TF" promptText="Password">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="40.0" />
+                     </VBox.margin>
+                  </JFXPasswordField>
+                  <JFXPasswordField fx:id="password2TF" promptText="Repeat Password">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="40.0" />
+                     </VBox.margin>
+                  </JFXPasswordField>
+                  <JFXTextField fx:id="emailTF" promptText="Email">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="40.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <Button fx:id="registerButton" mnemonicParsing="false" onAction="#onClick" styleClass="register-btn" text="Register">
+                     <VBox.margin>
+                        <Insets left="110.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="loginRouteButton" mnemonicParsing="false" onAction="#onClick" styleClass="member-button" text="Already a Member?">
+                     <VBox.margin>
+                        <Insets left="90.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <Label fx:id="errorLabel" alignment="CENTER" text="Label" textFill="#f20202" visible="false" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+            </Label>
+         </bottom>
+      </BorderPane>
+   </left>
+</BorderPane>

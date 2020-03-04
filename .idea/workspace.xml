@@ -2,39 +2,135 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af1f1b76-787a-45be-a837-7293da3541ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/AboutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/ViewRouter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/About.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/LionX.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.base/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.base/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.base/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.controls/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.controls/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.controls/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.fxml/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.fxml/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.fxml/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.graphics/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.graphics/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.graphics/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.graphics/jpeg_fx.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/applecoreaudio.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/glib.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/gstreamer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/libffi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.swing/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.swing/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.swing/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/icu_web.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/libxml2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/libxslt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/webkit.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/javafx.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libdecora_sse.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libfxplugins.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libglass.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libglib-lite.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libgstreamer-lite.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libjavafx_font.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libjavafx_iio.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libjfxmedia.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libjfxmedia_avf.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libjfxwebkit.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libprism_common.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libprism_es2.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libprism_sw.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/src.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbactions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/Exceptions/LionXConstraintException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/Exceptions/LionxAuthenticationError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/config/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/config/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/Portfolio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/PriceAlert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/Watchlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/interfaces/IModelDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/repository/IModelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/repository/impl/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/DummyData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Register.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/symbol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/AbstractHibernateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/domain/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/repository/impl/UserRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/LionXApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/LionXApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/SettingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/news.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/order-history.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/order-history.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/project.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/settings.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/wallets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/wallets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/News.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/News.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/OrderHistory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/OrderHistory.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Settings.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Settings.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Wallets.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Wallets.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/ViewRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/ViewRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="LionXDB" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="LionXDB" type="feb32156:DbDataSourceImpl" />
+        <item name="LIONXDB: database" type="2aa06773:H2ImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="LionXDB" type="feb32156:DbDataSourceImpl" />
+        <item name="LIONXDB: database" type="2aa06773:H2ImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="LionXDB" type="feb32156:DbDataSourceImpl" />
+        <item name="LIONXDB: database" type="2aa06773:H2ImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="FxmlFile" />
         <option value="Class" />
       </list>
@@ -57,27 +153,89 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/css" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.47011495" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="edu.psu.lionx.repository.impl" />
+      <recent name="edu.psu.lionx.domain" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.psu.lionx.config" />
+      <recent name="edu.psu.lionx.controllers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/src/main/resources/css" />
       <recent name="$PROJECT_DIR$/src/main/resources/edu/psu/lionx" />
       <recent name="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.psu.lionx.controllers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.LionXApplication">
+    <configuration name="LionXApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.psu.lionx.LionXApplication" />
+      <module name="LionX" />
+      <option name="VM_PARAMETERS" value="--module-path lib/javafx-sdk-11.0.2/lib --add-modules=javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LionX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.psu.lionx.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.psu.lionx.domain" />
+      <option name="MAIN_CLASS_NAME" value="edu.psu.lionx.domain.UserTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LionX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.psu.lionx.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.psu.lionx.domain" />
+      <option name="MAIN_CLASS_NAME" value="edu.psu.lionx.domain.UserTest" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LionX [javafx:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -103,9 +261,44 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="LionX [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.LionXApplication" />
+      <item itemvalue="JUnit.UserTest.delete" />
+      <item itemvalue="JUnit.UserTest.save" />
+      <item itemvalue="Maven.LionX [javafx:run]" />
+      <item itemvalue="Maven.LionX [test]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Maven.LionX [javafx:run]" />
+        <item itemvalue="Maven.LionX [test]" />
+        <item itemvalue="JUnit.UserTest.save" />
+        <item itemvalue="JUnit.UserTest.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +307,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:LionXDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:LionXDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@1b61c0b9" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -134,6 +337,7 @@
       <workItem from="1579637455446" duration="2268000" />
       <workItem from="1580347671708" duration="913000" />
       <workItem from="1580348909702" duration="2827000" />
+      <workItem from="1583158423218" duration="41766000" />
     </task>
     <servers />
   </component>
@@ -141,45 +345,149 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1256" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579637682636">
-      <screen x="-1440" y="-746" width="1440" height="2560" />
+    <state x="-1120" y="-68" key="#Assign_Data_Sources" timestamp="1583256799753">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state x="-1120" y="-68" key="#Assign_Data_Sources/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583256799753" />
+    <state x="-1256" y="-71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583269157395">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
     </state>
     <state x="-1256" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1579637682636" />
-    <state x="653" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1580350003900">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="-1256" y="-71" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268276922" />
+    <state x="-1256" y="-71" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583269157395" />
+    <state x="-990" y="77" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583251250074">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state x="-990" y="77" key="#com.intellij.fileTypes.FileTypeChooser/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583251250074" />
+    <state x="-880" y="-425" key="#com.intellij.ide.util.MemberChooser" timestamp="1583271650877">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
     </state>
     <state x="653" y="241" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1580350003900" />
-    <state width="1398" height="294" key="GridCell.Tab.0.bottom" timestamp="1580396877823">
-      <screen x="-1440" y="-746" width="1440" height="2560" />
+    <state x="-880" y="-425" key="#com.intellij.ide.util.MemberChooser/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583162897941" />
+    <state x="-880" y="-425" key="#com.intellij.ide.util.MemberChooser/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583271650877" />
+    <state x="-983" y="58" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583268010312">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state x="-983" y="58" key="#com.intellij.ide.util.TreeClassChooserDialog/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583268010312" />
+    <state x="-958" y="-97" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583177925378">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state x="-958" y="-97" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583177925378" />
+    <state width="1398" height="1237" key="GridCell.Tab.0.bottom" timestamp="1583272471769">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
     </state>
     <state width="1398" height="294" key="GridCell.Tab.0.bottom/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877823" />
     <state width="1398" height="793" key="GridCell.Tab.0.bottom/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670639" />
     <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1580350949488" />
-    <state width="1398" height="294" key="GridCell.Tab.0.center" timestamp="1580396877822">
-      <screen x="-1440" y="-746" width="1440" height="2560" />
+    <state width="1398" height="756" key="GridCell.Tab.0.bottom/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268396646" />
+    <state width="1398" height="756" key="GridCell.Tab.0.bottom/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.956@-1440.-1013.1440.2560" timestamp="1583262805052" />
+    <state width="1398" height="1237" key="GridCell.Tab.0.bottom/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471769" />
+    <state width="1398" height="1237" key="GridCell.Tab.0.center" timestamp="1583272471766">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
     </state>
     <state width="1398" height="294" key="GridCell.Tab.0.center/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877822" />
     <state width="1398" height="793" key="GridCell.Tab.0.center/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670636" />
     <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1580350949477" />
-    <state width="1398" height="294" key="GridCell.Tab.0.left" timestamp="1580396877821">
-      <screen x="-1440" y="-746" width="1440" height="2560" />
+    <state width="1398" height="756" key="GridCell.Tab.0.center/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268396642" />
+    <state width="1398" height="756" key="GridCell.Tab.0.center/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.956@-1440.-1013.1440.2560" timestamp="1583262805048" />
+    <state width="1398" height="1237" key="GridCell.Tab.0.center/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471766" />
+    <state width="1398" height="1237" key="GridCell.Tab.0.left" timestamp="1583272471765">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
     </state>
     <state width="1398" height="294" key="GridCell.Tab.0.left/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877821" />
     <state width="1398" height="793" key="GridCell.Tab.0.left/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670635" />
     <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1580350949452" />
-    <state width="1398" height="294" key="GridCell.Tab.0.right" timestamp="1580396877823">
-      <screen x="-1440" y="-746" width="1440" height="2560" />
+    <state width="1398" height="756" key="GridCell.Tab.0.left/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268396640" />
+    <state width="1398" height="756" key="GridCell.Tab.0.left/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.956@-1440.-1013.1440.2560" timestamp="1583262805046" />
+    <state width="1398" height="1237" key="GridCell.Tab.0.left/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471765" />
+    <state width="1398" height="1237" key="GridCell.Tab.0.right" timestamp="1583272471768">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
     </state>
     <state width="1398" height="294" key="GridCell.Tab.0.right/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877823" />
     <state width="1398" height="793" key="GridCell.Tab.0.right/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670637" />
     <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1580350949483" />
+    <state width="1398" height="756" key="GridCell.Tab.0.right/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268396644" />
+    <state width="1398" height="756" key="GridCell.Tab.0.right/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.956@-1440.-1013.1440.2560" timestamp="1583262805050" />
+    <state width="1398" height="1237" key="GridCell.Tab.0.right/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471768" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.bottom" timestamp="1583272471774">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state width="1398" height="1237" key="GridCell.Tab.1.bottom/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.952@-1440.-1013.1440.2560" timestamp="1583269422856" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.bottom/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.954@-1440.-1013.1440.2560" timestamp="1583272195802" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.bottom/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471773" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.center" timestamp="1583272471771">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state width="1398" height="1237" key="GridCell.Tab.1.center/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.952@-1440.-1013.1440.2560" timestamp="1583269422854" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.center/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.954@-1440.-1013.1440.2560" timestamp="1583272195800" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.center/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471771" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.left" timestamp="1583272471770">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state width="1398" height="1237" key="GridCell.Tab.1.left/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.952@-1440.-1013.1440.2560" timestamp="1583269422853" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.left/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.954@-1440.-1013.1440.2560" timestamp="1583272195798" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.left/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471770" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.right" timestamp="1583272471772">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state width="1398" height="1237" key="GridCell.Tab.1.right/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.952@-1440.-1013.1440.2560" timestamp="1583269422855" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.right/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.954@-1440.-1013.1440.2560" timestamp="1583272195801" />
+    <state width="1398" height="1237" key="GridCell.Tab.1.right/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471772" />
+    <state x="-1232" y="-152" key="SettingsEditor" timestamp="1583268563451">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state x="-1232" y="-152" key="SettingsEditor/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268345525" />
+    <state x="-1232" y="-152" key="SettingsEditor/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583268563451" />
+    <state width="720" height="1280" key="XDebugger.FullValuePopup" timestamp="1583272016589">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state width="720" height="1280" key="XDebugger.FullValuePopup/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272016589" />
+    <state width="720" height="1280" key="XDebugger.FullValuePopup/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.975@-1440.-1013.1440.2560" timestamp="1583269349002" />
     <state x="517" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1580347671616">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="517" y="357" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580347671616" />
+    <state x="-994" y="167" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583268297301">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state x="-994" y="167" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268297301" />
+    <state x="-948" y="1" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583272242000">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state x="-948" y="1" key="com.intellij.testIntegration.createTest.CreateTestDialog/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272242000" />
     <state x="546" y="148" key="refactoring.ChangeSignatureDialog" timestamp="1580350216530">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="546" y="148" key="refactoring.ChangeSignatureDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580350216530" />
+    <state x="-1055" y="-402" width="670" height="676" key="search.everywhere.popup" timestamp="1583256888893">
+      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    </state>
+    <state x="-1055" y="-402" width="670" height="676" key="search.everywhere.popup/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583256888893" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/edu/psu/lionx/domain/UserTest.java</url>
+          <line>299</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/User.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/RegisterController.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/User.java</url>
+          <line>228</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

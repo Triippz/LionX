@@ -1,0 +1,137 @@
+.right-body {
+    -fx-background-color: #0A014F;
+}
+
+.right-title-text-field {
+    -fx-text-fill: white;
+}
+
+
+.left-body{
+    -fx-background-color: #272343;
+}
+
+.left-body-center {
+    -fx-background-color: #e8eded;
+}
+
+.login-btn {
+    -fx-background-color:
+            linear-gradient(#ffd65b, #e68400),
+            linear-gradient(#ffef84, #f2ba44),
+            linear-gradient(#ffea6a, #efaa22),
+            linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+.register-button{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em; /* 12 */
+    -fx-text-fill: #828282;
+}
+
+.register-button:focused {
+    -fx-border-color: transparent, black;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 2);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.register-button:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+/*TextInputLayout*/
+.text-input{
+    -fx-highlight-fill: rgba(0,0,0,0.15);
+    -fx-highlight-text-fill: black;
+}
+
+.text-input{
+    -fx-font-size:16;
+    -fx-font-family:"Roboto";
+}
+
+/**ScrollPane**/
+.scroll-pane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.scroll-pane:focused {
+    -fx-background-insets: 0;
+}
+
+.scroll-pane .corner {
+    -fx-background-color:transparent;
+    -fx-background-insets: 0;
+}
+.scroll-bar{
+    -fx-background-color:transparent;
+    -fx-padding: 0;
+}
+.scroll-bar > .thumb{
+    -fx-background-color:-color-primary;
+    -fx-opacity: 0.5;
+}
+.scroll-bar > .increment-button,
+.scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+
+.paper-input{
+    -fx-padding:8px 0px;
+}
+.paper-input .bar{
+    -fx-stroke:-color-primary;
+    -fx-translate-y:1px;
+}
+
+.paper-input .text-input{
+    -fx-background-color: transparent;
+    -fx-background-insets:0;
+    -fx-background-radius: 0;
+    -fx-border-color: rgba(0,0,0,0.15);
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 8px 0px;
+    -fx-font-size:16px;
+}
+
+.paper-input .text-input:not-animated:focused, .paper-input:bar-placed .text-input:focused{
+    -fx-border-color: -color-primary;
+}
+.paper-input .text-input:focused{
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: rgba(0,0,0,0.07);
+    -fx-border-insets: 0 0 -1 0;
+}
+.paper-input > .label{
+    -fx-text-fill:#999;
+}
+.paper-input:focused  .label{
+    -fx-text-fill: -color-primary;
+}
+text-area{
+    -fx-padding:0;
+    -fx-wrap-text: true;
+    -fx-background-color: transparent;
+}
+.text-area .content{
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+.text-area .viewport{
+    -fx-background-color: transparent;
+}

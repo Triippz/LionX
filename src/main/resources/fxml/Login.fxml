@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1200.0" styleClass="main" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.LoginController">
+    <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="right-body" BorderPane.alignment="CENTER">
+            <center>
+                <ImageView fitHeight="464.0" fitWidth="553.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                    <image>
+                        <Image url="@../images/symbol.png" />
+                    </image>
+                </ImageView>
+            </center>
+            <top>
+                <Label styleClass="right-title-text-field" text="LionX Cryptocurrency Trader" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets top="50.0" />
+                    </BorderPane.margin>
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+            </top>
+        </BorderPane>
+    </center>
+    <left>
+        <BorderPane prefHeight="620.0" prefWidth="418.0" styleClass="left-body" BorderPane.alignment="CENTER">
+            <center>
+                <VBox prefHeight="200.0" prefWidth="100.0" styleClass="left-body-center" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="80.0" left="50.0" right="50.0" top="150.0" />
+                    </BorderPane.margin>
+                    <children>
+                        <Label text="User Login">
+                            <font>
+                                <Font name="System Bold" size="29.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="20.0" top="40.0" />
+                            </VBox.margin>
+                        </Label>
+                        <JFXTextField fx:id="userNameTF" promptText="Username">
+                            <VBox.margin>
+                                <Insets left="20.0" right="20.0" top="40.0" />
+                            </VBox.margin>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="passwordTF" promptText="Password">
+                            <VBox.margin>
+                                <Insets left="20.0" right="20.0" top="40.0" />
+                            </VBox.margin>
+                        </JFXPasswordField>
+                        <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onClick" styleClass="login-btn" text="Login">
+                            <VBox.margin>
+                                <Insets left="110.0" top="30.0" />
+                            </VBox.margin>
+                        </Button>
+                  <Button fx:id="noAccountBtn" mnemonicParsing="false" onAction="#onClick" styleClass="register-button" text="Don't have an account?">
+                     <VBox.margin>
+                        <Insets left="75.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                    </children>
+                </VBox>
+            </center>
+         <bottom>
+            <Label fx:id="errorLabel" text="Label" textFill="#f20404" visible="false" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="5.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </bottom>
+        </BorderPane>
+    </left>
+</BorderPane>
