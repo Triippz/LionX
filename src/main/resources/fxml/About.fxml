@@ -5,7 +5,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/about.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.AboutController">
+<BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/about.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.AboutController">
    <center>
       <Label text="TEMP ABOUT" textFill="WHITE" BorderPane.alignment="CENTER">
          <font>

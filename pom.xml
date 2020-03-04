@@ -18,10 +18,19 @@
             <snapshots/>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
 
     <dependencies>
+        <dependency>
+            <groupId>com.github.stellar</groupId>
+            <artifactId>java-stellar-sdk</artifactId>
+            <version>0.14.0</version>
+        </dependency>
         <dependency>
             <groupId>org.knowm.xchange</groupId>
             <artifactId>xchange-core</artifactId>
@@ -56,11 +65,6 @@
             <groupId>com.jfoenix</groupId>
             <artifactId>jfoenix</artifactId>
             <version>9.0.8</version>
-        </dependency>
-        <dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
-            <version>3.8.7</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>

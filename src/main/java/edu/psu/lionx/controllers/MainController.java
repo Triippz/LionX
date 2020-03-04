@@ -1,12 +1,12 @@
 package edu.psu.lionx.controllers;
 
 import com.jfoenix.controls.JFXButton;
+import edu.psu.lionx.domain.Transaction;
+import edu.psu.lionx.domain.User;
 import edu.psu.lionx.utils.ViewRouter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
@@ -20,9 +20,6 @@ import java.util.logging.Logger;
 
 public class MainController implements Initializable {
 
-
-    public VBox settingsBar;
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
@@ -34,7 +31,6 @@ public class MainController implements Initializable {
 
     @FXML
     public void onMenuButtonClick(ActionEvent actionEvent) {
-        // TODO Clean up into a router function
         var source = actionEvent.getSource();
 
         try {
@@ -43,7 +39,7 @@ public class MainController implements Initializable {
             } else if (source == settingsButton) {
                 ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.SETTINGS, borderPane);
             } else if (source == newsButton) {
-                ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.HOME, borderPane);
+                ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.NEWS, borderPane);
             } else if (source == orderHistoryButton) {
                 ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.ORDER_HISTORY, borderPane);
             } else if (source == walletsButton) {
@@ -58,27 +54,21 @@ public class MainController implements Initializable {
         }
     }
 
-    private void loadPage(String resource) {
-        try {
-            Parent home = FXMLLoader.load(getClass().getResource( resource ));
-            borderPane.setCenter(home);
-        } catch (IOException ex) {
-            Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
 
     @FXML
-    public BorderPane borderPane;
+    public VBox settingsBar;
     @FXML
-    public JFXButton homeButton;
+    private BorderPane borderPane;
     @FXML
-    public JFXButton walletsButton;
+    private JFXButton homeButton;
     @FXML
-    public JFXButton orderHistoryButton;
+    private JFXButton walletsButton;
     @FXML
-    public JFXButton newsButton;
+    private JFXButton orderHistoryButton;
     @FXML
-    public JFXButton settingsButton;
+    private JFXButton newsButton;
     @FXML
-    public JFXButton aboutButton;
+    private JFXButton settingsButton;
+    @FXML
+    private JFXButton aboutButton;
 }

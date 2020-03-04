@@ -30,7 +30,7 @@ public class LionXApplication extends Application {
     private static UserService userService;
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) {
         initialize();
 
         userService.userLoggedIn(

@@ -154,6 +154,11 @@ public class User implements Serializable, IModelDatabase<User> {
         isSignedIn = signedIn;
     }
 
+    public void signOut() {
+        this.setSignedIn(false);
+        this.save();
+    }
+
     public static void authenticateUser(String userName, String userPassword) throws LionxAuthenticationError {
         Session session = null;
         Optional<User> user;
@@ -239,11 +244,6 @@ public class User implements Serializable, IModelDatabase<User> {
     }
 
     @Override
-    public User update() {
-        return save();
-    }
-
-    @Override
     public void delete() {
         org.hibernate.Transaction dbTransaction = null;
         Session session = null;
@@ -304,4 +304,6 @@ public class User implements Serializable, IModelDatabase<User> {
                 .append(isSignedIn)
                 .toHashCode();
     }
+
+
 }

@@ -22,6 +22,7 @@ public class ViewRouter {
     public enum Routes {
         MAIN("Main.fxml"),
         HOME("Home.fxml"),
+        NEWS("News.fxml"),
         MANAGE_ALERTS("ManageAlert.fxml"),
         MANAGE_PORTFOLIOS("Wallets.fxml"),
         ABOUT("About.fxml"),

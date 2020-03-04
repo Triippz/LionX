@@ -356,4 +356,26 @@ class UserTest {
 
         user.delete();
     }
+
+    @Test
+    void signOut()  {
+        User user = new User(
+                DEFAULT_LOGIN,
+                DEFAULT_PASSWORD,
+                DEFAULT_FIRST_NAME,
+                DEFAULT_LAST_NAME,
+                DEFAULT_EMAIL,
+                DEFAULT_PHONE_NUMBER,
+                DEFAULT_IMAGE_URL,
+                DEFAULT_IS_SIGNED_IN
+        );
+        user.save();
+        assertNotNull(user.getId());
+
+        user.signOut();
+
+        assertFalse(user.getSignedIn());
+
+        user.delete();
+    }
 }

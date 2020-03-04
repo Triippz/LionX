@@ -88,6 +88,7 @@ public class RegisterController implements Initializable {
             return false;
         }
         user.setEmail(email);
+        user.setSignedIn(true);
 
         /* Everything is valid, lets try to add the user */
         try {
