@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
 
 <BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/news.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.NewsController">
-
+   <center>
+      <Label text="TEMP NEWS" textFill="#fffefe" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+   </center>
 </BorderPane>

@@ -2,86 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af1f1b76-787a-45be-a837-7293da3541ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/LionX.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.base/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.base/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.base/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.controls/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.controls/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.controls/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.fxml/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.fxml/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.fxml/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.graphics/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.graphics/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.graphics/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.graphics/jpeg_fx.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/applecoreaudio.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/glib.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/gstreamer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.media/libffi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.swing/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.swing/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.swing/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/icu_web.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/libxml2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/libxslt.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/legal/javafx.web/webkit.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/javafx.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libdecora_sse.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libfxplugins.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libglass.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libglib-lite.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libgstreamer-lite.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libjavafx_font.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libjavafx_iio.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libjfxmedia.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libjfxmedia_avf.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libjfxwebkit.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libprism_common.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libprism_es2.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/libprism_sw.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/src.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbactions.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/Exceptions/LionXConstraintException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/Exceptions/LionxAuthenticationError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/config/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/config/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/Portfolio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/PriceAlert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/Watchlist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/interfaces/IModelDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/repository/IModelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/repository/impl/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/DummyData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Register.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/symbol.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/AbstractHibernateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/domain/UserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/repository/impl/UserRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/LionXApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/LionXApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/ViewRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/ViewRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/News.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/News.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/OrderHistory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/OrderHistory.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,7 +261,7 @@
       <workItem from="1579637455446" duration="2268000" />
       <workItem from="1580347671708" duration="913000" />
       <workItem from="1580348909702" duration="2827000" />
-      <workItem from="1583158423218" duration="41766000" />
+      <workItem from="1583158423218" duration="43095000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
 
 <BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/wallets.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.WalletsController">
-
+   <center>
+      <Label text="TEMP WALLETS" textFill="#fcf9f9" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+   </center>
 </BorderPane>
