@@ -2,6 +2,8 @@
 
 ## IST 311 Group Project
 
+[![Build Status](https://travis-ci.com/Triippz/LionX.svg?branch=master)](https://travis-ci.com/Triippz/LionX)
+
 Project Structure
 
 ``src/main/java/psu/lionx/controllers`` -> Are your UI Controllers
