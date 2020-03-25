@@ -8,7 +8,7 @@ Project Structure
 
 ``src/main/java/psu/lionx/controllers`` -> Are your UI Controllers
 
-``src/main/java/psu/lionx/models`` -> Are your Model Classes
+``src/main/java/psu/lionx/domain`` -> Are your Model Classes
 
 ``src/main/java/psu/lionx/repository`` -> Where your DB query interfaces go
 

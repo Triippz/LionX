@@ -65,7 +65,7 @@ class UserRepositoryTest {
         assertNotNull(user.getId());
 
         Optional<User> foundUser = userRepository.find(user);
-        assert (foundUser.isPresent());
+        assertTrue (foundUser.isPresent());
 
         user.delete();
     }

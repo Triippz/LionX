@@ -16,8 +16,10 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 @Entity
 @Table(name = "User")
@@ -59,6 +61,12 @@ public class User implements Serializable, IModelDatabase<User> {
     @Column(name = "IS_SIGNED_IN", nullable = false)
     private Boolean isSignedIn;
 
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @Column(name = "user_id")
+    private Set<Wallet> wallets = new HashSet<>();
+
+
+
     public User() {
         this.isSignedIn = false;
     }
@@ -92,6 +100,22 @@ public class User implements Serializable, IModelDatabase<User> {
 
     public String getLogin() {
         return login;
+    }
+
+    public Set<Wallet> getWallets() {
+        return wallets;
+    }
+
+    public void setWallets(Set<Wallet> wallets) {
+        this.wallets = wallets;
+    }
+
+    public void addWallet(Wallet wallet) {
+        this.wallets.add(wallet);
+    }
+
+    public void removeWallet(Wallet wallet) {
+        this.wallets.remove(wallet);
     }
 
     public void setLogin(String login) {
@@ -208,10 +232,8 @@ public class User implements Serializable, IModelDatabase<User> {
     @Override
     public User save() throws LionXConstraintException {
         org.hibernate.Transaction dbTransaction = null;
-        Session session = null;
 
-        try {
-            session = HibernateUtil.getSessionFactory().openSession();
+        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 
             // start a transaction
             dbTransaction = session.beginTransaction();
@@ -227,17 +249,16 @@ public class User implements Serializable, IModelDatabase<User> {
             // commit transaction
             dbTransaction.commit();
 
+            session.close();
+
         } catch (ConstraintViolationException e) {
+            if (e.getConstraintName().contains("USER(EMAIL)"))
+                throw new LionXConstraintException("Email already exists!", e.getSQLException(), e.getConstraintName(), "EMAIL");
+            if (e.getConstraintName().contains("USER(LOGIN)"))
+                throw new LionXConstraintException("Username already exists!", e.getSQLException(), e.getConstraintName(), "LOGIN");
             if (dbTransaction != null) {
                 dbTransaction.rollback();
             }
-            if ( e.getConstraintName().contains("USER(EMAIL)") )
-                throw new LionXConstraintException("Email already exists!", e.getSQLException(), e.getConstraintName(), "EMAIL");
-            if ( e.getConstraintName().contains("USER(LOGIN)") )
-                throw new LionXConstraintException("Username already exists!", e.getSQLException(), e.getConstraintName(), "LOGIN");
-        } finally {
-            if ( session != null )
-                session.close();
         }
 
         return this;
@@ -246,9 +267,7 @@ public class User implements Serializable, IModelDatabase<User> {
     @Override
     public void delete() {
         org.hibernate.Transaction dbTransaction = null;
-        Session session = null;
-        try {
-            session = HibernateUtil.getSessionFactory().openSession();
+        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 
             // start a transaction
             dbTransaction = session.beginTransaction();
@@ -262,9 +281,6 @@ public class User implements Serializable, IModelDatabase<User> {
             if (dbTransaction != null) {
                 dbTransaction.rollback();
             }
-        } finally {
-            if ( session != null )
-                session.close();
         }
 
     }
