@@ -2,20 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af1f1b76-787a-45be-a837-7293da3541ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/Exceptions/LionXStellarException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/StellarAsset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/Wallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/repository/impl/WalletRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/services/StellarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/Connections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/repository/impl/WalletRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/services/StellarServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LionX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LionX.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/LionXApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/LionXApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/SettingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/config/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/config/HibernateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/interfaces/IModelDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/interfaces/IModelDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/ViewRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/ViewRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/About.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/About.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Settings.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Settings.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/DummyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/psu/lionx/utils/DummyData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/domain/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/repository/impl/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/psu/lionx/repository/impl/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,30 +41,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="LionXDB" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="LionXDB" type="feb32156:DbDataSourceImpl" />
-        <item name="LIONXDB: database" type="2aa06773:H2ImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="LionXDB" type="feb32156:DbDataSourceImpl" />
-        <item name="LIONXDB: database" type="2aa06773:H2ImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="LionXDB" type="feb32156:DbDataSourceImpl" />
-        <item name="LIONXDB: database" type="2aa06773:H2ImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -64,9 +49,9 @@
       <list>
         <option value="CSS File" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -109,12 +94,13 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.47011495" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="edu.psu.lionx.repository.impl" />
+      <recent name="edu.psu.lionx.services" />
       <recent name="edu.psu.lionx.domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -135,27 +121,11 @@
       <recent name="$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LionXApplication">
+  <component name="RunManager" selected="JUnit.WalletRepositoryTest">
     <configuration name="LionXApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.psu.lionx.LionXApplication" />
       <module name="LionX" />
       <option name="VM_PARAMETERS" value="--module-path lib/javafx-sdk-11.0.2/lib --add-modules=javafx.controls,javafx.fxml" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LionX" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.psu.lionx.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.psu.lionx.domain" />
-      <option name="MAIN_CLASS_NAME" value="edu.psu.lionx.domain.UserTest" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,6 +141,37 @@
       <option name="PACKAGE_NAME" value="edu.psu.lionx.domain" />
       <option name="MAIN_CLASS_NAME" value="edu.psu.lionx.domain.UserTest" />
       <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WalletRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LionX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.psu.lionx.repository.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.psu.lionx.repository.impl" />
+      <option name="MAIN_CLASS_NAME" value="edu.psu.lionx.repository.impl.WalletRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WalletRepositoryTest.findByPublicKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LionX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.psu.lionx.repository.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.psu.lionx.repository.impl" />
+      <option name="MAIN_CLASS_NAME" value="edu.psu.lionx.repository.impl.WalletRepositoryTest" />
+      <option name="METHOD_NAME" value="findByPublicKey" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -228,18 +229,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.LionXApplication" />
-      <item itemvalue="JUnit.UserTest.delete" />
       <item itemvalue="JUnit.UserTest.save" />
       <item itemvalue="Maven.LionX [javafx:run]" />
       <item itemvalue="Maven.LionX [test]" />
+      <item itemvalue="JUnit.WalletRepositoryTest.findByPublicKey" />
+      <item itemvalue="JUnit.WalletRepositoryTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WalletRepositoryTest" />
+        <item itemvalue="JUnit.WalletRepositoryTest.findByPublicKey" />
         <item itemvalue="Maven.LionX [test]" />
         <item itemvalue="Maven.LionX [javafx:run]" />
         <item itemvalue="JUnit.UserTest.save" />
-        <item itemvalue="JUnit.UserTest.delete" />
-        <item itemvalue="Maven.LionX [javafx:run]" />
       </list>
     </recent_temporary>
   </component>
@@ -279,6 +281,13 @@
       <workItem from="1580347671708" duration="913000" />
       <workItem from="1580348909702" duration="2827000" />
       <workItem from="1583158423218" duration="50665000" />
+      <workItem from="1583349095372" duration="19000" />
+      <workItem from="1583683487100" duration="2344000" />
+      <workItem from="1584230043513" duration="1914000" />
+      <workItem from="1584497837933" duration="3877000" />
+      <workItem from="1584502616343" duration="545000" />
+      <workItem from="1584810226383" duration="3391000" />
+      <workItem from="1585012691969" duration="14851000" />
     </task>
     <servers />
   </component>
@@ -286,26 +295,35 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1120" y="-68" key="#Assign_Data_Sources" timestamp="1583256799753">
-      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    <state x="373" y="381" key="#Assign_Data_Sources" timestamp="1584498618028">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="373" y="381" key="#Assign_Data_Sources/0.0.1680.1050@0.0.1680.1050" timestamp="1584498618028" />
     <state x="-1120" y="-68" key="#Assign_Data_Sources/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583256799753" />
-    <state x="-1256" y="-71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583269157395">
-      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    <state x="-940" y="161" key="#SQL_Dialects" timestamp="1585162465148">
+      <screen x="-1080" y="-464" width="1080" height="1920" />
+    </state>
+    <state x="-940" y="161" key="#SQL_Dialects/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@-1080.-464.1080.1920" timestamp="1585162465148" />
+    <state x="1926" y="392" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585097309078">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="-1256" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1579637682636" />
+    <state x="215" y="381" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1584503281580" />
     <state x="-1256" y="-71" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268276922" />
     <state x="-1256" y="-71" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583269157395" />
+    <state x="1926" y="392" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@1680.0.1920.1080" timestamp="1585097309078" />
     <state x="-990" y="77" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583251250074">
       <screen x="-1440" y="-1013" width="1440" height="2560" />
     </state>
     <state x="-990" y="77" key="#com.intellij.fileTypes.FileTypeChooser/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583251250074" />
-    <state x="653" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1583288277153">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="-660" y="-23" key="#com.intellij.ide.util.MemberChooser" timestamp="1585162200460">
+      <screen x="-1080" y="-464" width="1080" height="1920" />
     </state>
-    <state x="653" y="241" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1583288277153" />
+    <state x="614" y="-832" key="#com.intellij.ide.util.MemberChooser/-132.-1080.1920.1080/0.0.1680.1050@-132.-1080.1920.1080" timestamp="1584303358268" />
+    <state x="653" y="241" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1584501678412" />
     <state x="-880" y="-425" key="#com.intellij.ide.util.MemberChooser/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583162897941" />
     <state x="-880" y="-425" key="#com.intellij.ide.util.MemberChooser/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583271650877" />
+    <state x="-660" y="-23" key="#com.intellij.ide.util.MemberChooser/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@-1080.-464.1080.1920" timestamp="1585162200460" />
     <state x="-983" y="58" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583268010312">
       <screen x="-1440" y="-1013" width="1440" height="2560" />
     </state>
@@ -314,97 +332,124 @@
       <screen x="-1440" y="-1013" width="1440" height="2560" />
     </state>
     <state x="-958" y="-97" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583177925378" />
-    <state width="1638" height="333" key="GridCell.Tab.0.bottom" timestamp="1583328395847">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1038" height="846" key="GridCell.Tab.0.bottom" timestamp="1585164262864">
+      <screen x="-1080" y="-464" width="1080" height="1920" />
     </state>
     <state width="1398" height="294" key="GridCell.Tab.0.bottom/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877823" />
     <state width="1398" height="793" key="GridCell.Tab.0.bottom/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670639" />
-    <state width="1638" height="333" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1583328395847" />
+    <state width="1638" height="469" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585016033796" />
     <state width="1398" height="756" key="GridCell.Tab.0.bottom/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268396646" />
     <state width="1398" height="756" key="GridCell.Tab.0.bottom/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.956@-1440.-1013.1440.2560" timestamp="1583262805052" />
     <state width="1398" height="1237" key="GridCell.Tab.0.bottom/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471769" />
-    <state width="1638" height="333" key="GridCell.Tab.0.center" timestamp="1583328395845">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="492" key="GridCell.Tab.0.bottom/1680.0.1920.1080/-1080.-441.1080.1897/0.23.1680.960@1680.0.1920.1080" timestamp="1585095611859" />
+    <state width="1038" height="846" key="GridCell.Tab.0.bottom/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@-1080.-464.1080.1920" timestamp="1585164262864" />
+    <state width="1638" height="333" key="GridCell.Tab.0.bottom/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1584535245227" />
+    <state width="1038" height="653" key="GridCell.Tab.0.bottom/1680.23.1920.1057/-1080.-464.1080.1920/0.23.1680.954@-1080.-464.1080.1920" timestamp="1584906769752" />
+    <state width="1038" height="846" key="GridCell.Tab.0.center" timestamp="1585164262862">
+      <screen x="-1080" y="-464" width="1080" height="1920" />
     </state>
     <state width="1398" height="294" key="GridCell.Tab.0.center/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877822" />
     <state width="1398" height="793" key="GridCell.Tab.0.center/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670636" />
-    <state width="1638" height="333" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1583328395845" />
+    <state width="1638" height="469" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585016033795" />
     <state width="1398" height="756" key="GridCell.Tab.0.center/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268396642" />
     <state width="1398" height="756" key="GridCell.Tab.0.center/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.956@-1440.-1013.1440.2560" timestamp="1583262805048" />
     <state width="1398" height="1237" key="GridCell.Tab.0.center/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471766" />
-    <state width="1638" height="333" key="GridCell.Tab.0.left" timestamp="1583328395844">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="492" key="GridCell.Tab.0.center/1680.0.1920.1080/-1080.-441.1080.1897/0.23.1680.960@1680.0.1920.1080" timestamp="1585095611855" />
+    <state width="1038" height="846" key="GridCell.Tab.0.center/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@-1080.-464.1080.1920" timestamp="1585164262862" />
+    <state width="1638" height="333" key="GridCell.Tab.0.center/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1584535245226" />
+    <state width="1038" height="653" key="GridCell.Tab.0.center/1680.23.1920.1057/-1080.-464.1080.1920/0.23.1680.954@-1080.-464.1080.1920" timestamp="1584906769750" />
+    <state width="1038" height="846" key="GridCell.Tab.0.left" timestamp="1585164262861">
+      <screen x="-1080" y="-464" width="1080" height="1920" />
     </state>
     <state width="1398" height="294" key="GridCell.Tab.0.left/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877821" />
     <state width="1398" height="793" key="GridCell.Tab.0.left/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670635" />
-    <state width="1638" height="333" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1583328395844" />
+    <state width="1638" height="469" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585016033795" />
     <state width="1398" height="756" key="GridCell.Tab.0.left/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268396640" />
     <state width="1398" height="756" key="GridCell.Tab.0.left/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.956@-1440.-1013.1440.2560" timestamp="1583262805046" />
     <state width="1398" height="1237" key="GridCell.Tab.0.left/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471765" />
-    <state width="1638" height="333" key="GridCell.Tab.0.right" timestamp="1583328395846">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="492" key="GridCell.Tab.0.left/1680.0.1920.1080/-1080.-441.1080.1897/0.23.1680.960@1680.0.1920.1080" timestamp="1585095611853" />
+    <state width="1038" height="846" key="GridCell.Tab.0.left/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@-1080.-464.1080.1920" timestamp="1585164262861" />
+    <state width="1638" height="333" key="GridCell.Tab.0.left/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1584535245225" />
+    <state width="1038" height="653" key="GridCell.Tab.0.left/1680.23.1920.1057/-1080.-464.1080.1920/0.23.1680.954@-1080.-464.1080.1920" timestamp="1584906769749" />
+    <state width="1038" height="846" key="GridCell.Tab.0.right" timestamp="1585164262863">
+      <screen x="-1080" y="-464" width="1080" height="1920" />
     </state>
     <state width="1398" height="294" key="GridCell.Tab.0.right/-1440.-746.1440.2560/1680.0.2560.1440/0.0.1680.1050@-1440.-746.1440.2560" timestamp="1580396877823" />
     <state width="1398" height="793" key="GridCell.Tab.0.right/-1440.-746.1440.2560/1680.23.2560.1417/0.23.1680.956@-1440.-746.1440.2560" timestamp="1579637670637" />
-    <state width="1638" height="333" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1583328395846" />
+    <state width="1638" height="469" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585016033796" />
     <state width="1398" height="756" key="GridCell.Tab.0.right/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268396644" />
     <state width="1398" height="756" key="GridCell.Tab.0.right/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.956@-1440.-1013.1440.2560" timestamp="1583262805050" />
     <state width="1398" height="1237" key="GridCell.Tab.0.right/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471768" />
-    <state width="1638" height="469" key="GridCell.Tab.1.bottom" timestamp="1583327967275">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="492" key="GridCell.Tab.0.right/1680.0.1920.1080/-1080.-441.1080.1897/0.23.1680.960@1680.0.1920.1080" timestamp="1585095611857" />
+    <state width="1038" height="846" key="GridCell.Tab.0.right/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@-1080.-464.1080.1920" timestamp="1585164262863" />
+    <state width="1638" height="333" key="GridCell.Tab.0.right/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1584535245226" />
+    <state width="1038" height="653" key="GridCell.Tab.0.right/1680.23.1920.1057/-1080.-464.1080.1920/0.23.1680.954@-1080.-464.1080.1920" timestamp="1584906769751" />
+    <state width="1038" height="910" key="GridCell.Tab.1.bottom" timestamp="1585164002627">
+      <screen x="-1080" y="-464" width="1080" height="1920" />
     </state>
-    <state width="1638" height="469" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1583327967275" />
+    <state width="1638" height="469" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585016033798" />
+    <state width="1638" height="469" key="GridCell.Tab.1.bottom/0.23.1680.952@0.23.1680.952" timestamp="1585016020007" />
     <state width="1398" height="1237" key="GridCell.Tab.1.bottom/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.952@-1440.-1013.1440.2560" timestamp="1583269422856" />
     <state width="1398" height="1237" key="GridCell.Tab.1.bottom/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.954@-1440.-1013.1440.2560" timestamp="1583272195802" />
     <state width="1398" height="1237" key="GridCell.Tab.1.bottom/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471773" />
-    <state width="1638" height="469" key="GridCell.Tab.1.center" timestamp="1583327967274">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1038" height="910" key="GridCell.Tab.1.bottom/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@-1080.-464.1080.1920" timestamp="1585164002627" />
+    <state width="1038" height="910" key="GridCell.Tab.1.center" timestamp="1585164002624">
+      <screen x="-1080" y="-464" width="1080" height="1920" />
     </state>
-    <state width="1638" height="469" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1583327967274" />
+    <state width="1638" height="469" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585016033798" />
+    <state width="1638" height="469" key="GridCell.Tab.1.center/0.23.1680.952@0.23.1680.952" timestamp="1585016020006" />
     <state width="1398" height="1237" key="GridCell.Tab.1.center/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.952@-1440.-1013.1440.2560" timestamp="1583269422854" />
     <state width="1398" height="1237" key="GridCell.Tab.1.center/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.954@-1440.-1013.1440.2560" timestamp="1583272195800" />
     <state width="1398" height="1237" key="GridCell.Tab.1.center/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471771" />
-    <state width="1638" height="469" key="GridCell.Tab.1.left" timestamp="1583327967273">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1038" height="910" key="GridCell.Tab.1.center/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@-1080.-464.1080.1920" timestamp="1585164002624" />
+    <state width="1038" height="910" key="GridCell.Tab.1.left" timestamp="1585164002622">
+      <screen x="-1080" y="-464" width="1080" height="1920" />
     </state>
-    <state width="1638" height="469" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1583327967273" />
+    <state width="1638" height="469" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585016033797" />
+    <state width="1638" height="469" key="GridCell.Tab.1.left/0.23.1680.952@0.23.1680.952" timestamp="1585016020006" />
     <state width="1398" height="1237" key="GridCell.Tab.1.left/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.952@-1440.-1013.1440.2560" timestamp="1583269422853" />
     <state width="1398" height="1237" key="GridCell.Tab.1.left/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.954@-1440.-1013.1440.2560" timestamp="1583272195798" />
     <state width="1398" height="1237" key="GridCell.Tab.1.left/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471770" />
-    <state width="1638" height="469" key="GridCell.Tab.1.right" timestamp="1583327967274">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1038" height="910" key="GridCell.Tab.1.left/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@-1080.-464.1080.1920" timestamp="1585164002622" />
+    <state width="1038" height="910" key="GridCell.Tab.1.right" timestamp="1585164002625">
+      <screen x="-1080" y="-464" width="1080" height="1920" />
     </state>
-    <state width="1638" height="469" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1583327967274" />
+    <state width="1638" height="469" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585016033798" />
+    <state width="1638" height="469" key="GridCell.Tab.1.right/0.23.1680.952@0.23.1680.952" timestamp="1585016020006" />
     <state width="1398" height="1237" key="GridCell.Tab.1.right/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.952@-1440.-1013.1440.2560" timestamp="1583269422855" />
     <state width="1398" height="1237" key="GridCell.Tab.1.right/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.954@-1440.-1013.1440.2560" timestamp="1583272195801" />
     <state width="1398" height="1237" key="GridCell.Tab.1.right/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272471772" />
-    <state x="243" y="213" key="SettingsEditor" timestamp="1583292122796">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1038" height="910" key="GridCell.Tab.1.right/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@-1080.-464.1080.1920" timestamp="1585164002625" />
+    <state x="2099" y="176" key="SettingsEditor" timestamp="1585099457916">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="243" y="213" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1583292122796" />
     <state x="-1232" y="-152" key="SettingsEditor/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268345525" />
     <state x="-1232" y="-152" key="SettingsEditor/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583268563451" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1583292061472">
+    <state x="2099" y="176" key="SettingsEditor/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@1680.0.1920.1080" timestamp="1585099457916" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1584230253958">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1583292061472" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1584230253958" />
     <state width="720" height="1280" key="XDebugger.FullValuePopup" timestamp="1583272016589">
       <screen x="-1440" y="-1013" width="1440" height="2560" />
     </state>
     <state width="720" height="1280" key="XDebugger.FullValuePopup/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272016589" />
     <state width="720" height="1280" key="XDebugger.FullValuePopup/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.975@-1440.-1013.1440.2560" timestamp="1583269349002" />
-    <state x="517" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1580347671616">
+    <state x="517" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1584810232593">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="517" y="357" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580347671616" />
+    <state x="517" y="357" key="com.intellij.ide.util.TipDialog/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1584810232593" />
     <state x="-994" y="167" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583268297301">
       <screen x="-1440" y="-1013" width="1440" height="2560" />
     </state>
     <state x="-994" y="167" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/1680.-244.2560.1417/-1440.-1013.1440.2560/0.23.1680.1027@-1440.-1013.1440.2560" timestamp="1583268297301" />
-    <state x="-948" y="1" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583272242000">
-      <screen x="-1440" y="-1013" width="1440" height="2560" />
+    <state x="-711" y="297" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585163170251">
+      <screen x="-1080" y="-464" width="1080" height="1920" />
     </state>
     <state x="-948" y="1" key="com.intellij.testIntegration.createTest.CreateTestDialog/1680.-267.2560.1440/-1440.-1013.1440.2560/0.0.1680.1050@-1440.-1013.1440.2560" timestamp="1583272242000" />
+    <state x="-711" y="297" key="com.intellij.testIntegration.createTest.CreateTestDialog/1680.0.1920.1080/-1080.-464.1080.1920/0.0.1680.1050@-1080.-464.1080.1920" timestamp="1585163170251" />
     <state x="546" y="148" key="refactoring.ChangeSignatureDialog" timestamp="1580350216530">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -420,12 +465,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/edu/psu/lionx/domain/UserTest.java</url>
-          <line>299</line>
+          <line>320</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/User.java</url>
-          <line>184</line>
+          <line>208</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -434,14 +479,19 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/psu/lionx/domain/User.java</url>
-          <line>233</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/src/test/java/edu/psu/lionx/repository/impl/WalletRepositoryTest.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/psu/lionx/controllers/RegisterController.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/main/java/edu/psu/lionx/repository/impl/WalletRepository.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/edu/psu/lionx/repository/impl/WalletRepositoryTest.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

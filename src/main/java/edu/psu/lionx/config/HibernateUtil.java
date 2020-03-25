@@ -1,15 +1,10 @@
 package edu.psu.lionx.config;
 
-import edu.psu.lionx.domain.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.cfg.Environment;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * HibernateUtil
@@ -24,7 +19,7 @@ public class HibernateUtil {
     private static StandardServiceRegistry registry;
     private static SessionFactory sessionFactory;
 
-    public static SessionFactory getSessionFactory() {
+    public static synchronized SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
                 // Create registry

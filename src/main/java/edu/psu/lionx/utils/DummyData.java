@@ -1,13 +1,15 @@
 package edu.psu.lionx.utils;
 
 import edu.psu.lionx.domain.User;
+import edu.psu.lionx.domain.Wallet;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class DummyData {
 
-    public static List<User> getDummyUsers() {
+    public static List<User> getDummyUsers() throws IOException {
         User user1 = new User(
                 "PETER",
                 "PAN",
@@ -76,6 +78,10 @@ public class DummyData {
         users.add(user4);
         users.add(user5);
         users.add(user6);
+
+        Wallet wallet = new Wallet();
+        wallet.save();
+        user1.addWallet(wallet);
 
         return users;
     }

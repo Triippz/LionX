@@ -30,7 +30,7 @@ public class LionXApplication extends Application {
     private static UserService userService;
 
     @Override
-    public void start(Stage stage) {
+    public void start(Stage stage) throws IOException {
         initialize();
 
         userService.userLoggedIn(
@@ -51,7 +51,6 @@ public class LionXApplication extends Application {
     }
 
     public static void initialize() {
-        persistDummyUsers();
         userService = new UserService();
     }
 
@@ -67,7 +66,7 @@ public class LionXApplication extends Application {
         stage.show();
     }
 
-    public static void persistDummyUsers() {
+    public static void persistDummyUsers() throws IOException {
         for ( User user : DummyData.getDummyUsers() )
         {
             try {

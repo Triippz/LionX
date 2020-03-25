@@ -21,12 +21,16 @@ class UserTest {
     public static String DEFAULT_PHONE_NUMBER = "+18888888888";
     public static String DEFAULT_IMAGE_URL = "";
     public static Boolean DEFAULT_IS_SIGNED_IN = true;
+    private final String DEFAULT_PUBLIC_KEY = "GDEHTFP6JKE7PVCPA2RQT35JLPQLYC535PNCLBWFECLRGTCTBLVCUE5K";
+    private final String DEFAULT_PRIVATE_KEY = "SC3FP6NW6BHPJDDAQZZTRVEKWWYFT6RQHW46A6TPXEAXZMLRKUQ72OJR";
 
     private UserRepository userRepository;
+    private Wallet wallet;
 
     @BeforeEach
     void init() {
         userRepository = new UserRepository();
+        wallet = new Wallet(DEFAULT_PUBLIC_KEY, DEFAULT_PRIVATE_KEY);
     }
 
 
@@ -43,6 +47,7 @@ class UserTest {
                 DEFAULT_IS_SIGNED_IN
         );
         user.setId(DEFAULT_ID);
+        user.addWallet(wallet);
         assertEquals(DEFAULT_ID, user.getId());
     }
 
@@ -58,6 +63,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         assertEquals(DEFAULT_LOGIN, user.getLogin());
     }
 
@@ -74,6 +80,7 @@ class UserTest {
                 DEFAULT_IS_SIGNED_IN
         );
         user.setLogin(DEFAULT_LOGIN);
+        user.addWallet(wallet);
         assertEquals(DEFAULT_LOGIN, user.getLogin());
     }
 
@@ -89,6 +96,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         user.setPassword(DEFAULT_PASSWORD);
         assertEquals(DEFAULT_PASSWORD, user.getPassword());
     }
@@ -105,6 +113,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         user.setPassword(DEFAULT_PASSWORD);
         assertEquals(DEFAULT_PASSWORD, user.getPassword());
     }
@@ -121,6 +130,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         assertEquals(DEFAULT_FIRST_NAME, user.getFirstName());
     }
 
@@ -136,6 +146,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         user.setFirstName(DEFAULT_FIRST_NAME);
         assertEquals(DEFAULT_FIRST_NAME, user.getFirstName());
     }
@@ -152,6 +163,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         assertEquals(DEFAULT_LAST_NAME, user.getLastName());
     }
 
@@ -167,6 +179,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         user.setLastName(DEFAULT_LAST_NAME);
         assertEquals(DEFAULT_LAST_NAME, user.getLastName());
     }
@@ -183,6 +196,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         assertEquals(DEFAULT_EMAIL, user.getEmail());
     }
 
@@ -198,6 +212,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         user.setEmail(DEFAULT_EMAIL);
         assertEquals(DEFAULT_EMAIL, user.getEmail());
     }
@@ -214,6 +229,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         assertEquals(DEFAULT_PHONE_NUMBER, user.getPhoneNumber());
     }
 
@@ -229,6 +245,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         user.setPhoneNumber(DEFAULT_PHONE_NUMBER);
         assertEquals(DEFAULT_PHONE_NUMBER, user.getPhoneNumber());
     }
@@ -245,6 +262,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         assertEquals(DEFAULT_IMAGE_URL, user.getImageUrl());
     }
 
@@ -260,6 +278,7 @@ class UserTest {
                 "DEFAULT_IMAGE_URL",
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         user.setImageUrl(DEFAULT_IMAGE_URL);
         assertEquals(DEFAULT_IMAGE_URL, user.getImageUrl());
     }
@@ -276,6 +295,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         assertTrue(user.getSignedIn());
     }
 
@@ -291,6 +311,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         user.setSignedIn(false);
         assertFalse(user.getSignedIn());
     }
@@ -307,6 +328,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         user.save();
         assertNotNull(user.getId());
         user.delete();
@@ -325,6 +347,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         user.save();
         user.delete();
 
@@ -344,6 +367,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 false
         );
+        user.addWallet(wallet);
         user.save();
         assertNotNull(user.getId());
 
@@ -369,6 +393,7 @@ class UserTest {
                 DEFAULT_IMAGE_URL,
                 DEFAULT_IS_SIGNED_IN
         );
+        user.addWallet(wallet);
         user.save();
         assertNotNull(user.getId());
 
