@@ -26,4 +26,8 @@ public class StellarAsset {
         this.assetBalance = assetBalance;
     }
 
+    @Override
+    public String toString() {
+        return assetName + " " + assetBalance;
+    }
 }

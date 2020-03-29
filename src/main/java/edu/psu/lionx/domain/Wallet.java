@@ -21,6 +21,10 @@ public class Wallet implements Serializable, IModelDatabase<Wallet> {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "WALLET_NAME", length = 25, nullable = false)
+    @NotNull
+    private String walletName;
+
     @Column(name = "PRIVATE_KEY", length = 100, unique = true, nullable = false)
     @NotNull
     private String privateKey;
@@ -37,6 +41,19 @@ public class Wallet implements Serializable, IModelDatabase<Wallet> {
         this.publicKey = publicKey;
     }
 
+    public Wallet(String walletName, String publicKey, String privateKey) {
+        this.walletName = walletName;
+        this.privateKey = privateKey;
+        this.publicKey = publicKey;
+    }
+
+    public String getWalletName() {
+        return walletName;
+    }
+
+    public void setWalletName(String walletName) {
+        this.walletName = walletName;
+    }
 
     public String getPrivateKey() {
         return privateKey;
@@ -125,5 +142,10 @@ public class Wallet implements Serializable, IModelDatabase<Wallet> {
                 dbTransaction.rollback();
             }
         }
+    }
+
+    @Override
+    public String toString() {
+        return walletName;
     }
 }

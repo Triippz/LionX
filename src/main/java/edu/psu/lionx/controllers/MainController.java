@@ -1,8 +1,6 @@
 package edu.psu.lionx.controllers;
 
 import com.jfoenix.controls.JFXButton;
-import edu.psu.lionx.domain.Transaction;
-import edu.psu.lionx.domain.User;
 import edu.psu.lionx.utils.ViewRouter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.URL;
@@ -19,7 +18,7 @@ import java.util.logging.Logger;
 
 
 public class MainController implements Initializable {
-
+    private org.slf4j.Logger log = LoggerFactory.getLogger(MainController.class);
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
@@ -47,6 +46,8 @@ public class MainController implements Initializable {
             } else if (source == aboutButton)
                 ViewRouter.routeCenterView(ViewRouter.FXML_ROOT, ViewRouter.Routes.ABOUT, borderPane);
         } catch (IOException e) {
+            e.printStackTrace();
+            log.error(e.getMessage());
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error Loading Page!");
             alert.setContentText(e.getMessage());

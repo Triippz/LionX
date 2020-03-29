@@ -21,6 +21,7 @@ class UserTest {
     public static String DEFAULT_PHONE_NUMBER = "+18888888888";
     public static String DEFAULT_IMAGE_URL = "";
     public static Boolean DEFAULT_IS_SIGNED_IN = true;
+    private final String DEFAULT_WALLET_NAME = "My Wallet";
     private final String DEFAULT_PUBLIC_KEY = "GDEHTFP6JKE7PVCPA2RQT35JLPQLYC535PNCLBWFECLRGTCTBLVCUE5K";
     private final String DEFAULT_PRIVATE_KEY = "SC3FP6NW6BHPJDDAQZZTRVEKWWYFT6RQHW46A6TPXEAXZMLRKUQ72OJR";
 
@@ -30,7 +31,7 @@ class UserTest {
     @BeforeEach
     void init() {
         userRepository = new UserRepository();
-        wallet = new Wallet(DEFAULT_PUBLIC_KEY, DEFAULT_PRIVATE_KEY);
+        wallet = new Wallet(DEFAULT_WALLET_NAME, DEFAULT_PUBLIC_KEY, DEFAULT_PRIVATE_KEY);
     }
 
 
