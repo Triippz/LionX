@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
-
 
 <BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/wallets.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.WalletsController">
    <center>
@@ -13,4 +17,36 @@
          </font>
       </Label>
    </center>
+   <bottom>
+      <Group BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane>
+               <children>
+                  <Group />
+               </children>
+            </AnchorPane>
+         </children>
+      </Group>
+   </bottom>
+   <left>
+      <SplitPane dividerPositions="0.33642691415313225, 0.6902552204176334" maxHeight="-Infinity" orientation="VERTICAL" prefHeight="174.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="22.0" prefWidth="158.0">
+               <children>
+                  <TextField fx:id="newUsername" layoutX="4.0" layoutY="18.0" prefHeight="26.0" prefWidth="150.0" promptText="username" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="148.0" prefWidth="158.0">
+               <children>
+                  <TextField fx:id="newPassword" editable="false" layoutX="5.0" layoutY="14.0" promptText="password" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="158.0">
+               <children>
+                  <Button fx:id="createWallet" layoutX="35.0" layoutY="13.0" mnemonicParsing="false" text="Create Wallet" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </left>
 </BorderPane>
