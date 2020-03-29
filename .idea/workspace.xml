@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af1f1b76-787a-45be-a837-7293da3541ce" name="Default Changelist" comment="Added tableview through Scenebuilder into Wallets.fxml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Wallets.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Wallets.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="af1f1b76-787a-45be-a837-7293da3541ce" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -264,6 +261,14 @@
       <workItem from="1584810226383" duration="3391000" />
       <workItem from="1585012691969" duration="14851000" />
     </task>
+    <task id="LOCAL-00001" summary="Added two textfields labeled username and password, along with a button. Done through Scenebuilder, code altered in Wallets.fxml">
+      <created>1585421951095</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585421951095</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +284,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added two textfields labeled username and password, along with a button. Done through Scenebuilder, code altered in Wallets.fxml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added two textfields labeled username and password, along with a button. Done through Scenebuilder, code altered in Wallets.fxml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="373" y="381" key="#Assign_Data_Sources" />
