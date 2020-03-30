@@ -2,12 +2,20 @@
     -fx-background-color: #0A014F;
 }
 
+.text-field, .text-field:focused {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+}
+
 .table-view {
     -fx-background-color: #0A014F;
     -fx-border-color: gray;
 }
 .table-view-row {
     -fx-border-color: gray;
+    -fx-text-fill: white;
+    -fx-background-color: #0A014F;
 }
 .table-view .column-header {
     -fx-background-color: #0A014F;
@@ -16,4 +24,7 @@
     -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-font-size: 14;
+}
+.choice-box {
+    -fx-text-fill: black;
 }

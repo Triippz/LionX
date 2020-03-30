@@ -105,7 +105,6 @@ public class User implements Serializable, IModelDatabase<User> {
     public Set<Wallet> getWallets() {
         return wallets;
     }
-
     public void setWallets(Set<Wallet> wallets) {
         this.wallets = wallets;
     }
@@ -204,7 +203,7 @@ public class User implements Serializable, IModelDatabase<User> {
         }
 
         BCrypt.Result verify =
-                BCrypt.verifyer().verify(userPassword.toCharArray(), user.get().getPassword().toCharArray());
+                BCrypt.verifyer().verify(userPassword.toCharArray(), user.get().getPassword());
 
         if ( !verify.verified )
             throw new LionxAuthenticationError("Invalid Password! Please try again.");

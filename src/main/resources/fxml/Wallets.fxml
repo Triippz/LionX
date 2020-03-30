@@ -14,7 +14,7 @@
 
 <BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/wallets.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.WalletsController">
    <right>
-      <VBox prefHeight="526.0" prefWidth="169.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="rightVBox" prefHeight="526.0" prefWidth="169.0" BorderPane.alignment="CENTER">
          <children>
             <Label alignment="CENTER" prefHeight="24.0" prefWidth="172.0" text="Select Wallet" textFill="#fcf9f9">
                <font>
@@ -46,7 +46,7 @@
       </VBox>
    </right>
    <top>
-      <HBox prefHeight="68.0" prefWidth="774.0" BorderPane.alignment="CENTER">
+      <HBox fx:id="titleHBox" prefHeight="68.0" prefWidth="774.0" BorderPane.alignment="CENTER">
          <children>
             <Label text="Your Wallets" textFill="#fcf9f9">
                <HBox.margin>
@@ -60,40 +60,53 @@
       </HBox>
    </top>
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="centerVBox" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label text="Public Key:" textFill="#f8f4f4">
-                     <font>
-                        <Font name="System Bold" size="17.0" />
-                     </font>
+                  <VBox prefHeight="64.0" prefWidth="678.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Public Key:" textFill="#f8f4f4">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <JFXTextField fx:id="pubKeyTF" editable="false" onMouseClicked="#onMouseClick" prefHeight="27.0" prefWidth="442.0">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Private Key:" textFill="#fcf9f9">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="privKeyTF" editable="false" onMouseClicked="#onMouseClick" prefHeight="27.0" prefWidth="440.0">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Button fx:id="sendFundsBtn" mnemonicParsing="false" onAction="#onSendClick" prefHeight="27.0" prefWidth="96.0" text="Send Funds">
                      <HBox.margin>
-                        <Insets left="20.0" top="10.0" />
+                        <Insets left="20.0" top="20.0" />
                      </HBox.margin>
-                  </Label>
-                  <JFXTextField fx:id="pubKeyTF" prefHeight="27.0" prefWidth="386.0">
-                     <HBox.margin>
-                        <Insets left="25.0" />
-                     </HBox.margin>
-                  </JFXTextField>
-               </children>
-            </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <Label text="Private Key:" textFill="#fcf9f9">
-                     <HBox.margin>
-                        <Insets left="20.0" top="10.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font size="17.0" />
-                     </font>
-                  </Label>
-                  <JFXTextField fx:id="privKeyTF" prefHeight="27.0" prefWidth="384.0">
-                     <HBox.margin>
-                        <Insets left="20.0" />
-                     </HBox.margin>
-                  </JFXTextField>
+                  </Button>
                </children>
             </HBox>
             <TableView fx:id="assetsTable" prefHeight="493.0" prefWidth="585.0">
@@ -102,7 +115,6 @@
                 <TableColumn fx:id="assetNameCol" editable="false" prefWidth="108.0" text="Asset" />
                 <TableColumn fx:id="balanceCol" editable="false" prefWidth="188.0" text="Balance" />
                   <TableColumn fx:id="allocationCol" editable="false" prefWidth="124.0" text="Allocation" />
-                  <TableColumn fx:id="sendTxCol" prefWidth="75.0" />
               </columns>
                <VBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />

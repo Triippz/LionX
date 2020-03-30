@@ -4,6 +4,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,7 +32,9 @@ public class ViewRouter {
         WALLETS("Wallets.fxml"),
         ORDER_HISTORY("OrderHistory.fxml"),
         LOGIN("Login.fxml"),
-        REGISTER("Register.fxml");
+        REGISTER("Register.fxml"),
+        ADD_WALLET("AddWalletDialog.fxml"),
+        SEND_TX("SendTransactionDialog.fxml");
         private String route;
 
         Routes ( String route ) {
@@ -79,6 +83,16 @@ public class ViewRouter {
         Parent root = fxmlLoader.load( );
         Scene scene = new Scene ( root );
         rootStage.setScene ( scene );
+    }
+
+    public static void loadDialog(FXMLLoader fxmlLoader) throws IOException {
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene ( root );
+        Stage newStage = new Stage();
+        newStage.initModality(Modality.APPLICATION_MODAL);
+        newStage.setResizable(false);
+        newStage.setScene ( scene );
+        newStage.showAndWait();
     }
 
 }

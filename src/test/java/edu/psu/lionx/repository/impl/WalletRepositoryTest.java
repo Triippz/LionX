@@ -13,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class WalletRepositoryTest {
 
     public static long DEFAULT_ID = 1L;
+    public static final String DEFAULT_NAME = "WALLET";
     public static final String DEFAULT_PUBLIC_KEY =
             "GDEHTFP6JKE7PVCPA2RQT35JLPQLYC535PNCLBWFECLRGTCTBLVCUE5K";
     public static final String DEFAULT_PRIVATE_KEY =
@@ -28,6 +29,7 @@ class WalletRepositoryTest {
     @Test
     void findAll() throws Exception {
         Wallet wallet = new Wallet(
+                DEFAULT_NAME,
                 DEFAULT_PUBLIC_KEY,
                 DEFAULT_PRIVATE_KEY
         );
@@ -41,6 +43,7 @@ class WalletRepositoryTest {
     @Test
     void testFind() throws IOException {
         Wallet wallet = new Wallet(
+                DEFAULT_NAME,
                 DEFAULT_PUBLIC_KEY,
                 DEFAULT_PRIVATE_KEY
         );
@@ -56,6 +59,7 @@ class WalletRepositoryTest {
     @Test
     void findByPublicKey() throws IOException {
         Wallet wallet = new Wallet(
+                DEFAULT_NAME,
                 DEFAULT_PUBLIC_KEY,
                 DEFAULT_PRIVATE_KEY
         );
@@ -72,6 +76,7 @@ class WalletRepositoryTest {
     @Test
     void findByPrivateKey() throws IOException {
         Wallet wallet = new Wallet(
+                DEFAULT_NAME,
                 DEFAULT_PUBLIC_KEY,
                 DEFAULT_PRIVATE_KEY
         );

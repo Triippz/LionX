@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.util.Scanner;
+import java.util.*;
 
 
 public class StellarService {
@@ -69,11 +69,17 @@ public class StellarService {
                 assetName = "XLM";
             else
                 assetName = balance.getAssetCode();
-            assetBalances[i] = new StellarAsset(
-                    assetName, balance.getBalance() );
+            assetBalances[i] = new StellarAsset( assetName, balance.getBalance() );
             i++;
         }
         return assetBalances;
+    }
+
+    public ArrayList<StellarAsset> getAllBalancesArrayList (Wallet wallet, Boolean isMainNet) throws IOException {
+        StellarAsset[] assets = getAllBalances(wallet, isMainNet);
+        ArrayList<StellarAsset> stellarAssets = new ArrayList<>();
+        Collections.addAll(stellarAssets, assets);
+        return stellarAssets;
     }
 
     public SubmitTransactionResponse sendPayment (boolean isMainNet, Wallet wallet,
@@ -111,5 +117,11 @@ public class StellarService {
         return server.submitTransaction(transaction);
     }
 
+    public Boolean publicKeyExists(String publicKey) {
+        try {
+            KeyPair pair = KeyPair.fromAccountId(publicKey);
+            return true;
+        } catch ( Exception e ) { return false; }
+    }
 
 }

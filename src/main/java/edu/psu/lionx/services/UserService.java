@@ -1,8 +1,12 @@
 package edu.psu.lionx.services;
 
+import edu.psu.lionx.Exceptions.LionXUserNotFoundException;
+import edu.psu.lionx.domain.User;
 import edu.psu.lionx.repository.impl.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Optional;
 
 public class UserService {
     private Logger log = LoggerFactory.getLogger(UserService.class);
@@ -20,5 +24,13 @@ public class UserService {
                     log.debug("Logged in User found: {}", user);
                     foundUser.run();
                 }, userNotFound);
+    }
+
+    public User getLoggedInUser() throws LionXUserNotFoundException {
+        log.debug("Request to find logged in user");
+        Optional<User> foundUser = this.userRepository.findUserByIsSignedInIsTrue();
+        if ( foundUser.isPresent() )
+            return foundUser.get();
+        throw new LionXUserNotFoundException("No logged in user found");
     }
 }
