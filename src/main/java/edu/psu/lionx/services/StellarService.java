@@ -2,14 +2,21 @@ package edu.psu.lionx.services;
 
 import edu.psu.lionx.domain.StellarAsset;
 import edu.psu.lionx.domain.Wallet;
-import edu.psu.lionx.repository.impl.UserRepository;
 import edu.psu.lionx.utils.Connections;
+import edu.psu.lionx.utils.Format;
+import edu.psu.lionx.utils.Resolver;
+import javafx.util.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.stellar.sdk.*;
 import org.stellar.sdk.requests.ErrorResponse;
+import org.stellar.sdk.requests.PaymentsRequestBuilder;
+import org.stellar.sdk.requests.TransactionsRequestBuilder;
 import org.stellar.sdk.responses.AccountResponse;
+import org.stellar.sdk.responses.Page;
 import org.stellar.sdk.responses.SubmitTransactionResponse;
+import org.stellar.sdk.responses.TransactionResponse;
+import org.stellar.sdk.responses.operations.*;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,10 +28,8 @@ import java.util.*;
 public class StellarService {
     private static Logger log = LoggerFactory.getLogger(StellarService.class);
 
-    private UserRepository userRepository;
-
     public StellarService() {
-        this.userRepository = new UserRepository();
+
     }
 
     public static KeyPair createAccount() throws IOException {
@@ -124,4 +129,103 @@ public class StellarService {
         } catch ( Exception e ) { return false; }
     }
 
+    public Pair<String, ArrayList<edu.psu.lionx.domain.Transaction>> getTransactions
+            ( KeyPair keyPair, String oldPagingToken, boolean isMainNet ) throws IOException {
+        String newPagingToken = null;
+        Server server = Connections.getServer ( isMainNet );
+
+        // Get tx's for the current account
+        PaymentsRequestBuilder paymentResponse = server.payments().forAccount(keyPair.getAccountId());
+        ArrayList<edu.psu.lionx.domain.Transaction> transactions = new ArrayList<>();
+        Page<OperationResponse> page = paymentResponse.execute();
+
+        // if our paging token is null, position the cursor at the begining for oldest TX's
+        // If not null, set the cursor at the location from the pagingToken
+        if (oldPagingToken != null) {
+            paymentResponse.cursor(oldPagingToken);
+        }
+
+        for ( OperationResponse record : page.getRecords() )
+        {
+            // Update the paging token for our return
+            newPagingToken = record.getPagingToken();
+
+
+            String assetName = getAssetName(record);
+            String amount = getAmount(record);
+            String date = Format.time ( record.getCreatedAt() );
+            String memo = record.getTransaction().isPresent()
+                    ? record.getTransaction().get().getMemo().toString()
+                    : "";
+            String sourceAccount = record.getSourceAccount();
+//            String destAccount = record.getTransaction().get().
+            String transactionHash = record.getTransactionHash();
+            Boolean wasSuccess = record.isTransactionSuccessful();
+            String operationType = getOperationType(keyPair, record);
+
+            transactions.add(
+                    new edu.psu.lionx.domain.Transaction(
+                            assetName,
+                            amount,
+                            date,
+                            memo,
+                            sourceAccount,
+                            transactionHash,
+                            wasSuccess,
+                            operationType,
+                            record
+                    )
+            );
+
+        }
+        return new Pair<>(newPagingToken, transactions);
+    }
+
+
+    private String getAmount(OperationResponse response) {
+        if ( response instanceof PaymentOperationResponse )
+            return ( ( PaymentOperationResponse ) response ).getAmount();
+        return "";
+    }
+
+    private String getAssetName(OperationResponse response) {
+        if ( response instanceof PaymentOperationResponse )
+            return Resolver.assetName( ( ( PaymentOperationResponse ) response ).getAsset() );
+        return "XLM";
+    }
+
+    public String getOperationType(KeyPair keyPair, OperationResponse response) {
+        String sourceAccount = response.getSourceAccount();
+        String userAccount = keyPair.getAccountId();
+
+        if ( response instanceof PaymentOperationResponse ) {
+            if ( !userAccount.equalsIgnoreCase ( sourceAccount ) )
+                return "RECEIVED";
+            else
+                return "SENT";
+        }
+        if ( response instanceof CreateAccountOperationResponse )
+            return "ACCOUNT CREATED";
+        if ( response instanceof ManageBuyOfferOperationResponse )
+            return "BUY";
+        if ( response instanceof ManageSellOfferOperationResponse )
+            return "SELL";
+        if ( response instanceof AccountMergeOperationResponse )
+            return "ACCOUNT MERGE";
+        if ( response instanceof AllowTrustOperationResponse )
+            return "ALLOW TRUST";
+        if ( response instanceof BumpSequenceOperationResponse )
+            return "BUMP SEQUENCE";
+        if ( response instanceof ChangeTrustOperationResponse )
+            return "CHANGE TRUST";
+        if ( response instanceof CreatePassiveSellOfferOperationResponse )
+            return "PASSIVE SELL";
+        if ( response instanceof InflationOperationResponse )
+            return "INFLATION";
+        if ( response instanceof PathPaymentBaseOperationResponse )
+            return "PATH PAYMENT";
+        if ( response instanceof SetOptionsOperationResponse )
+            return "SET OPTIONS";
+        return "UNKNOWN";
+    }
 }

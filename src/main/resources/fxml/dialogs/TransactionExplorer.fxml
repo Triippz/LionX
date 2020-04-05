@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane fx:id="borderPane" prefHeight="549.0" prefWidth="789.0" styleClass="body" stylesheets="@../../css/dialog/transaction-explorer.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.dialogs.TransactionExplorerController">
+   <bottom>
+      <Button fx:id="finishedButton" onAction="#onClick" mnemonicParsing="false" text="Got it Thanks!" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="30.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>

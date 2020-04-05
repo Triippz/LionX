@@ -1,5 +1,7 @@
 package edu.psu.lionx.utils;
 
+import edu.psu.lionx.controllers.dialogs.TransactionExplorerController;
+import edu.psu.lionx.domain.Transaction;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -34,7 +36,8 @@ public class ViewRouter {
         LOGIN("Login.fxml"),
         REGISTER("Register.fxml"),
         ADD_WALLET("AddWalletDialog.fxml"),
-        SEND_TX("SendTransactionDialog.fxml");
+        SEND_TX("SendTransactionDialog.fxml"),
+        TRANSACTION_EXPLORER("TransactionExplorer.fxml");
         private String route;
 
         Routes ( String route ) {
@@ -94,5 +97,6 @@ public class ViewRouter {
         newStage.setScene ( scene );
         newStage.showAndWait();
     }
+
 
 }

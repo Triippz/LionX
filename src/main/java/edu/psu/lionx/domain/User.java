@@ -1,11 +1,12 @@
 package edu.psu.lionx.domain;
 
-import at.favre.lib.crypto.bcrypt.BCrypt;
+//import at.favre.lib.crypto.bcrypt.BCrypt;
 import edu.psu.lionx.Exceptions.LionXConstraintException;
 import edu.psu.lionx.Exceptions.LionxAuthenticationError;
 import edu.psu.lionx.config.Constants;
 import edu.psu.lionx.config.HibernateUtil;
 import edu.psu.lionx.interfaces.IModelDatabase;
+import edu.psu.lionx.services.UserService;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.hibernate.Session;
@@ -202,10 +203,7 @@ public class User implements Serializable, IModelDatabase<User> {
                 session.close();
         }
 
-        BCrypt.Result verify =
-                BCrypt.verifyer().verify(userPassword.toCharArray(), user.get().getPassword());
-
-        if ( !verify.verified )
+        if ( !userPassword.equals(user.get().getPassword()) )
             throw new LionxAuthenticationError("Invalid Password! Please try again.");
 
         List<User> users;
@@ -213,10 +211,10 @@ public class User implements Serializable, IModelDatabase<User> {
             session = HibernateUtil.getSessionFactory().openSession();
             users = session.createQuery("from User where isSignedIn=true", User.class).list();
 
-            for ( User foundUser : users ) {
-                foundUser.setSignedIn(false);
-                foundUser.save();
-            }
+//            for ( User foundUser : users ) {
+//                foundUser.setSignedIn(false);
+//                foundUser.save();
+//            }
         } catch ( Exception ignored ) {
         } finally {
             if ( session != null )
@@ -237,9 +235,6 @@ public class User implements Serializable, IModelDatabase<User> {
             // start a transaction
             dbTransaction = session.beginTransaction();
 
-            // Encrypt the password
-            String encryptedPass = BCrypt.withDefaults().hashToString(12, this.password.toCharArray());
-            setPassword(encryptedPass);
             setLogin(this.login.toUpperCase());
 
             // save the user object

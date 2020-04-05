@@ -12,9 +12,7 @@ import org.slf4j.LoggerFactory;
 import javax.persistence.NoResultException;
 import javax.persistence.NonUniqueResultException;
 import javax.validation.constraints.NotNull;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class UserRepository implements IModelRepository<User> {
     private Logger log = LoggerFactory.getLogger(UserRepository.class);
@@ -75,6 +73,27 @@ public class UserRepository implements IModelRepository<User> {
                 session.close();
         }
         return user;
+    }
+
+    @SuppressWarnings("Duplicates")
+    public List<User> findUsersByIsSignedInIsTrue() {
+        Session session = null;
+        List<User> users = null;
+        try {
+            session = HibernateUtil.getSessionFactory().openSession();
+            users = session.createQuery("from User where isSignedIn=true", User.class).getResultList();
+        } catch ( IllegalArgumentException e ) {
+            throw new IllegalArgumentException(e);
+        } catch (NonUniqueResultException e2) {
+            cleanSessions();
+        } catch (NoResultException ignore) {}
+        finally {
+            if ( session != null )
+                session.close();
+        }
+        if ( users == null )
+            return Collections.emptyList();
+        return users;
     }
 
     public Optional<User> findByUsername(String username) throws LionxAuthenticationError {
