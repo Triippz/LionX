@@ -236,7 +236,6 @@ public class User implements Serializable, IModelDatabase<User> {
             dbTransaction = session.beginTransaction();
 
             setLogin(this.login.toUpperCase());
-            setSignedIn(true);
 
             // save the user object
             session.saveOrUpdate(this);
