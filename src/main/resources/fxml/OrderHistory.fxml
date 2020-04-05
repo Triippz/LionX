@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
-
 
 <BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/order-history.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.OrderHistoryController">
    <center>
-      <Label text="TEMP ORDER HISTORY" textFill="#f2f2f2" BorderPane.alignment="CENTER">
-         <font>
-            <Font size="38.0" />
-         </font>
-      </Label>
+      <TableView fx:id="transactionTable" prefHeight="200.0" prefWidth="745.0" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="assetNameCol" prefWidth="75.0" resizable="false" text="Asset" />
+            <TableColumn fx:id="operationTypeCol" prefWidth="75.0" text="TX Type" />
+            <TableColumn fx:id="amountCol" prefWidth="75.0" text="Amount" />
+<!--            <TableColumn fx:id="wasSuccessCol" prefWidth="75.0" text="Success" />-->
+            <TableColumn fx:id="dateCol" prefWidth="75.0" text="Date " />
+            <TableColumn fx:id="memoCol" prefWidth="75.0" text="Memo" />
+         </columns></TableView>
    </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Order History">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </HBox.margin>
+            </Label>
+            <ChoiceBox fx:id="walletChoiceBox" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="500.0" top="50.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+      </HBox>
+   </top>
 </BorderPane>

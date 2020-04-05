@@ -25,6 +25,42 @@
     -fx-font-weight: bold;
     -fx-font-size: 14;
 }
+.choice-box .context-menu {
+    -fx-background-color: #36289c;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: orange;
+}
+
+.choice-box .menu-item > .label {
+    -fx-text-fill: white;
+}
+
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: #36289c;
+}
+
 .choice-box {
-    -fx-text-fill: black;
+    -fx-background-color: #36289c;
+    -fx-mark-color: orange;
+}
+
+.choice-box > .label {
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-color:
+            linear-gradient(#ffd65b, #e68400),
+            linear-gradient(#ffef84, #f2ba44),
+            linear-gradient(#ffea6a, #efaa22),
+            linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+    -fx-padding: 10 20 10 20;
 }

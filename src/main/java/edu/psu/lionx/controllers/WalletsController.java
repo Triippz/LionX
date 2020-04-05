@@ -22,8 +22,10 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.util.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.stellar.sdk.KeyPair;
 
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
@@ -81,13 +83,6 @@ public class WalletsController implements Initializable {
     private void loadAll() {
         log.info("Loading components");
         this.loadUser();
-        this.loadWalletChoiceBox();
-        this.loadWalletTextFields();
-        this.loadAssetTable();
-        this.loadTransactionTable();
-    }
-
-    private void reloadElements() {
         this.loadWalletChoiceBox();
         this.loadWalletTextFields();
         this.loadAssetTable();
@@ -188,7 +183,36 @@ public class WalletsController implements Initializable {
     }
 
     private void loadTransactionTable() {
-        recentTxTable.setPlaceholder(new Label("No recent transactions"));
+        if (currentUser.getWallets().isEmpty() ) {
+            recentTxTable.setPlaceholder(new Label("No recent transactions"));
+            return;
+        }
+        try {
+            KeyPair pair =
+                    KeyPair.fromAccountId(walletChoiceBox.getSelectionModel().getSelectedItem().getPublicKey());
+            Pair<String, ArrayList<Transaction>> transactions =
+                    this.stellarService.getTransactions(pair, null, false);
+            List<Transaction.RecentTx> recentTxes = new ArrayList<>();
+
+            for ( Transaction tx : transactions.getValue() )
+                recentTxes.add(
+                        new Transaction.RecentTx(
+                                tx.getOperationType(),
+                                tx.getAmount()
+                        )
+                );
+
+            ObservableList<Transaction.RecentTx> data = FXCollections.observableList(recentTxes);
+            recentTxCol.setCellValueFactory(new PropertyValueFactory<>("amount"));
+            recentTxCol.prefWidthProperty().bind(recentTxTable.widthProperty().multiply(1));
+            recentTxCol.getStyleClass().add("table-view-row");
+
+            recentTxTable.setItems(data);
+            recentTxTable.setSelectionModel(null);
+        } catch (IOException | NullPointerException e) {
+            log.error(e.getMessage());
+            recentTxTable.setPlaceholder(new Label("Unable to load recent transactions"));
+        }
     }
 
 
@@ -209,7 +233,11 @@ public class WalletsController implements Initializable {
             ViewRouter.loadDialog( ViewRouter.routeScene(ViewRouter.FXML_DIALOG, ViewRouter.Routes.ADD_WALLET));
         } catch (IOException e) {
             log.error(e.getMessage());
-            log.error("Unable to load dialog, please try again");
+            AlertUtil.pushAlert("Error Loading Dialog",
+                    "Unable to open Dialog",
+                    "If this error continues, please contact the authors",
+                    Alert.AlertType.ERROR,
+                    null);
         }
 
         loadUser();
@@ -257,9 +285,9 @@ public class WalletsController implements Initializable {
     @FXML
     public Button createWalletButton;
     @FXML
-    public TableView<Transaction> recentTxTable;
+    public TableView<Transaction.RecentTx> recentTxTable;
     @FXML
-    public TableColumn<Transaction, String> recentTxCol;
+    public TableColumn<Transaction.RecentTx, String> recentTxCol;
     @FXML
     public JFXTextField pubKeyTF;
     @FXML

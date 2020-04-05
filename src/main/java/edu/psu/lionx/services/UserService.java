@@ -6,6 +6,7 @@ import edu.psu.lionx.repository.impl.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
 import java.util.Optional;
 
 public class UserService {
@@ -32,5 +33,22 @@ public class UserService {
         if ( foundUser.isPresent() )
             return foundUser.get();
         throw new LionXUserNotFoundException("No logged in user found");
+    }
+
+    public void clearSessions() {
+        log.debug("Request to clear all user sessions");
+        List<User> foundUsers = this.userRepository.findUsersByIsSignedInIsTrue();
+        if ( foundUsers.isEmpty() )
+            return;
+
+        for ( User user : foundUsers )
+            user.signOut();
+    }
+
+
+    public Boolean multipleLogIns() {
+        log.debug("Request to see if more than 1 session");
+        List<User> foundUsers = this.userRepository.findUsersByIsSignedInIsTrue();
+        return foundUsers.size() <= 1;
     }
 }

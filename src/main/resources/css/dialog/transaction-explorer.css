@@ -1,0 +1,13 @@
+.body {
+    -fx-background-color: #0A014F;
+}
+.button {
+    -fx-background-color:
+            linear-gradient(#3f5efb, #fc466b);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}

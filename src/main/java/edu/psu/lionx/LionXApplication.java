@@ -52,6 +52,9 @@ public class LionXApplication extends Application {
 
     public static void initialize() {
         userService = new UserService();
+
+        if ( userService.multipleLogIns() )
+            userService.clearSessions();
     }
 
 
@@ -62,7 +65,7 @@ public class LionXApplication extends Application {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("LionX");
-        stage.initStyle(StageStyle.UNDECORATED);
+//        stage.initStyle(StageStyle.UNDECORATED);
         stage.show();
     }
 

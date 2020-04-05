@@ -34,7 +34,7 @@ If using IntelliJ on MacOS, you need to ensure you point your VM options
 to any applicable JavaFX modules you wish to use. This should suffice on mac.
 
 ```bash
---module-path lib/javafx-sdk-11.0.2/lib --add-modules=javafx.controls,javafx.fxml
+--module-path lib/javafx-sdk-11.0.2/lib --add-modules=javafx.controls,javafx.fxml, javafx.web
 ```
 
 It may be easier just to run the Maven goals from within IntelliJ for debugging and running.
