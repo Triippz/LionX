@@ -18,6 +18,16 @@ Enter the directory
 cd LionX
 ```
 
+Make a copy of .env.example for use
+```bash
+mv .env.example .env
+```
+
+Add in the API KEY for news
+```.env
+NEWS_API_KEY=<API_KEY_HERE>
+```
+
 Run the maven goal for JavaFX 11
 ```bash
 mvn javafx:run

@@ -1,28 +1,29 @@
 package edu.psu.lionx.services;
 
+import edu.psu.lionx.domain.Order;
 import edu.psu.lionx.domain.StellarAsset;
 import edu.psu.lionx.domain.Wallet;
 import edu.psu.lionx.utils.Connections;
 import edu.psu.lionx.utils.Format;
 import edu.psu.lionx.utils.Resolver;
+import javafx.collections.ObservableList;
+import javafx.scene.control.TableView;
 import javafx.util.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.stellar.sdk.*;
-import org.stellar.sdk.requests.ErrorResponse;
-import org.stellar.sdk.requests.PaymentsRequestBuilder;
-import org.stellar.sdk.requests.TransactionsRequestBuilder;
-import org.stellar.sdk.responses.AccountResponse;
-import org.stellar.sdk.responses.Page;
-import org.stellar.sdk.responses.SubmitTransactionResponse;
-import org.stellar.sdk.responses.TransactionResponse;
+import org.stellar.sdk.requests.*;
+import org.stellar.sdk.responses.*;
 import org.stellar.sdk.responses.operations.*;
+import shadow.com.google.common.base.Optional;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
 
 
 public class StellarService {
@@ -179,6 +180,99 @@ public class StellarService {
 
         }
         return new Pair<>(newPagingToken, transactions);
+    }
+
+    public void getCurrentOrders(Boolean isMainNet, ObservableList<Order> orderList) {
+        Server server = Connections.getServer ( isMainNet );
+        var response = server.trades().cursor("now").stream(new EventListener<>() {
+            @Override
+            public void onEvent(TradeResponse tradeResponse) {
+                updateOrderList(orderList, tradeResponse);
+            }
+
+            @Override
+            public void onFailure(Optional<Throwable> optional, Optional<Integer> optional1) {
+
+            }
+        });
+    }
+
+    public void getCurrentTransactions(Boolean isMainNet, ObservableList<edu.psu.lionx.domain.Transaction> txList) {
+        Server server = Connections.getServer ( isMainNet );
+        var response = server.transactions().cursor("now").stream(new EventListener<>() {
+            @Override
+            public void onEvent(TransactionResponse transactionResponse) {
+                updateTransactionList(txList, transactionResponse);
+            }
+
+            @Override
+            public void onFailure(Optional<Throwable> optional, Optional<Integer> optional1) {
+
+            }
+        });
+    }
+
+    private void updateTransactionList(ObservableList<edu.psu.lionx.domain.Transaction> txList,
+                                       TransactionResponse transactionResponse) {
+        this.balanceTxTable(txList);
+        try {
+            Transaction transaction = Transaction.fromEnvelopeXdr(
+                    transactionResponse.getEnvelopeXdr(),
+                    Network.TESTNET);
+            int operationCount = transaction.getOperations().length;
+            String memo = transaction.getMemo().toString();
+            String  sourceAccount = transaction.getSourceAccount();
+            Network network = transaction.getNetwork();
+            txList.add(new edu.psu.lionx.domain.Transaction(
+                    sourceAccount,
+                    memo,
+                    operationCount,
+                    network
+            ));
+        } catch (Exception e) {
+            log.error("Error loading transaction: {}", e.getMessage());
+        }
+    }
+
+    private void updateOrderList(ObservableList<Order> orderList,
+                                 TradeResponse tradeResponse) {
+        this.balanceOrderTable(orderList);
+        try {
+            String baseAssetCode = tradeResponse.getBaseAssetCode();
+            String baseAmount = tradeResponse.getBaseAmount();
+            String baseAccount = tradeResponse.getBaseAccount();
+            String counterAssetCode = tradeResponse.getCounterAssetCode();
+            String counterAmount = tradeResponse.getCounterAmount();
+            String counterAcount = tradeResponse.getCounterAccount();
+            String price = tradeResponse.getPrice().toString();
+            orderList.add( new Order(
+                    baseAssetCode,
+                    baseAmount,
+                    baseAccount,
+                    counterAssetCode,
+                    counterAmount,
+                    counterAcount,
+                    price
+            ));
+        } catch ( Exception e ) {
+            log.error("Error loading trade: {}", e.getMessage());
+        }
+    }
+
+    private void balanceOrderTable(ObservableList<Order> orderList) {
+        // check the size of the table
+        int size = orderList.size();
+        // Remove last element to bring in new, ONLY IF SIZE IS ABOVE 25
+        if ( size > 25 )
+            orderList.remove(orderList.get(orderList.size() - 1));
+    }
+
+    private void balanceTxTable(ObservableList<edu.psu.lionx.domain.Transaction> txList) {
+        // check the size of the table
+        int size = txList.size();
+        // Remove last element to bring in new, ONLY IF SIZE IS ABOVE 25
+        if ( size > 25 )
+            txList.remove(txList.get(txList.size() - 1));
     }
 
 

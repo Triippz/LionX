@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/news.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.NewsController">
-   <center>
-      <Label text="TEMP NEWS" textFill="#fffefe" BorderPane.alignment="CENTER">
-         <font>
-            <Font size="35.0" />
-         </font>
-      </Label>
-   </center>
+<BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/news.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="edu.psu.lionx.controllers.NewsController">
+    <center>
+        <TableView fx:id="newsTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        </TableView>
+    </center>
+    <top>
+        <HBox prefHeight="57.0" prefWidth="774.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="News Feed" textFill="#fcfafa">
+                    <font>
+                        <Font size="27.0"/>
+                    </font>
+                </Label>
+                <JFXTextField fx:id="searchBox" prefHeight="27.0" prefWidth="264.0" onAction="#onEnter" promptText="Enter a search term"
+                              unFocusColor="#c21da3">
+                    <HBox.margin>
+                        <Insets left="350.0" top="10.0"/>
+                    </HBox.margin>
+                </JFXTextField>
+            </children>
+            <BorderPane.margin>
+                <Insets left="20.0" top="10.0"/>
+            </BorderPane.margin>
+        </HBox>
+    </top>
 </BorderPane>

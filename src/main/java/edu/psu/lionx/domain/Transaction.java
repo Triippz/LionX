@@ -1,6 +1,7 @@
 package edu.psu.lionx.domain;
 
 
+import org.stellar.sdk.Network;
 import org.stellar.sdk.responses.operations.OperationResponse;
 import org.stellar.sdk.xdr.OperationType;
 
@@ -26,7 +27,18 @@ public class Transaction {
 
     private String operationType;
 
+    private Integer operationCount;
+
+    private Network network;
+
     private OperationResponse response;
+
+    public Transaction(String sourceAccount, String memo, Integer operationCount, Network network){
+        this.sourceAccount = sourceAccount;
+        this.memo = memo;
+        this.operationCount = operationCount;
+        this.network = network;
+    }
 
     public Transaction(String assetName, String amount, String date, String memo,
                        String sourceAccount, String destAccount, String transactionHash,
@@ -55,6 +67,30 @@ public class Transaction {
         this.wasSuccess = wasSuccess;
         this.operationType = operationType;
         this.response = opResponse;
+    }
+
+    public Boolean getWasSuccess() {
+        return wasSuccess;
+    }
+
+    public void setWasSuccess(Boolean wasSuccess) {
+        this.wasSuccess = wasSuccess;
+    }
+
+    public Integer getOperationCount() {
+        return operationCount;
+    }
+
+    public void setOperationCount(Integer operationCount) {
+        this.operationCount = operationCount;
+    }
+
+    public Network getNetwork() {
+        return network;
+    }
+
+    public void setNetwork(Network network) {
+        this.network = network;
     }
 
     public String getOperationType() {

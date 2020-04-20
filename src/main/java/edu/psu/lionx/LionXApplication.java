@@ -28,6 +28,7 @@ public class LionXApplication extends Application {
     public static Stage rootStage;
     private static Logger logger = LoggerFactory.getLogger(LionXApplication.class);
     private static UserService userService;
+    public static String API_KEY = "";
 
     @Override
     public void start(Stage stage) throws IOException {

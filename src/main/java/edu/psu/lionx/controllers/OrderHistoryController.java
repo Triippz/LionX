@@ -93,31 +93,36 @@ public class OrderHistoryController implements Initializable {
 
         } catch (IOException | NullPointerException e) {
             log.error(e.getMessage());
-            e.printStackTrace();
+            this.setColWidthProperties();
             transactionTable.setPlaceholder(new Label("Unable to retrieve transactions for wallet"));
         }
     }
 
+    private void setColWidthProperties() {
+        assetNameCol.prefWidthProperty().bind(transactionTable.widthProperty().multiply(0.1));
+        operationTypeCol.prefWidthProperty().bind(transactionTable.widthProperty().multiply(0.2));
+        amountCol.prefWidthProperty().bind(transactionTable.widthProperty().multiply(0.2));
+        dateCol.prefWidthProperty().bind(transactionTable.widthProperty().multiply(0.1));
+        memoCol.prefWidthProperty().bind(transactionTable.widthProperty().multiply(0.4));
+    }
+
     private void defineTransactionColumns() {
         assetNameCol.setCellValueFactory(new PropertyValueFactory<>("assetName"));
-        assetNameCol.prefWidthProperty().bind(transactionTable.widthProperty().multiply(0.1));
         assetNameCol.getStyleClass().add("table-view-row");
 
         operationTypeCol.setCellValueFactory(new PropertyValueFactory<>("operationType"));
-        operationTypeCol.prefWidthProperty().bind(transactionTable.widthProperty().multiply(0.2));
         operationTypeCol.getStyleClass().add("table-view-row");
 
         amountCol.setCellValueFactory(new PropertyValueFactory<>("amount"));
-        amountCol.prefWidthProperty().bind(transactionTable.widthProperty().multiply(0.2));
         amountCol.getStyleClass().add("table-view-row");
 
         dateCol.setCellValueFactory(new PropertyValueFactory<>("date"));
-        dateCol.prefWidthProperty().bind(transactionTable.widthProperty().multiply(0.1));
         dateCol.getStyleClass().add("table-view-row");
 
         memoCol.setCellValueFactory(new PropertyValueFactory<>("memo"));
-        memoCol.prefWidthProperty().bind(transactionTable.widthProperty().multiply(0.4));
         memoCol.getStyleClass().add("table-view-row");
+
+        this.setColWidthProperties();
     }
 
     private void loadWalletChoiceBox() {
