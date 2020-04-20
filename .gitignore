@@ -39,3 +39,7 @@ gradle-app.setting
 ## OS X
 ##############################
 .DS_Store
+
+
+*.env
+.env

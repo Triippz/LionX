@@ -160,26 +160,31 @@ public class WalletsController implements Initializable {
         } catch (IOException e) {
             log.error(e.getMessage());
             assetsTable.setPlaceholder(new Label("Unable to retrieve balances for wallet"));
+            this.setColWidProperties();
         }
     }
 
     private void defineAssetColumns() {
         assetImgCol.setCellValueFactory(new PropertyValueFactory<>("assetImage"));
-        assetImgCol.prefWidthProperty().bind(assetsTable.widthProperty().multiply(0.25));
         assetImgCol.getStyleClass().add("table-view-row");
 
         assetNameCol.setCellValueFactory(new PropertyValueFactory<>("assetName"));
-        assetNameCol.prefWidthProperty().bind(assetsTable.widthProperty().multiply(0.25));
         assetNameCol.getStyleClass().add("table-view-row");
 
         balanceCol.setCellValueFactory(new PropertyValueFactory<>("assetBalance"));
-        balanceCol.prefWidthProperty().bind(assetsTable.widthProperty().multiply(0.25));
         balanceCol.getStyleClass().add("table-view-row");
 
         allocationCol.setCellValueFactory(new PropertyValueFactory<>("assetAllocation"));
-        allocationCol.prefWidthProperty().bind(assetsTable.widthProperty().multiply(0.25));
         allocationCol.getStyleClass().add("table-view-row");
 
+        this.setColWidProperties();
+    }
+
+    private void setColWidProperties() {
+        assetImgCol.prefWidthProperty().bind(assetsTable.widthProperty().multiply(0.25));
+        assetNameCol.prefWidthProperty().bind(assetsTable.widthProperty().multiply(0.25));
+        balanceCol.prefWidthProperty().bind(assetsTable.widthProperty().multiply(0.25));
+        allocationCol.prefWidthProperty().bind(assetsTable.widthProperty().multiply(0.25));
     }
 
     private void loadTransactionTable() {

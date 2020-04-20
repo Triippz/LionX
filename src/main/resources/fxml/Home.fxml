@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <!--
@@ -20,14 +23,7 @@
   ~ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   -->
 
-<BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/home.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.HomeController">
-   <center>
-      <Label text="TEMP HOME" textFill="#f5f5f5" BorderPane.alignment="CENTER">
-         <font>
-            <Font size="39.0" />
-         </font>
-      </Label>
-   </center>
+<BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/home.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.HomeController">
    <top>
       <Label fx:id="welcomeLabel" text="Label" textFill="#fffdfd" BorderPane.alignment="CENTER">
          <font>
@@ -35,4 +31,28 @@
          </font>
       </Label>
    </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Order Book" textFill="#fcfafa">
+               <VBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TableView fx:id="ordersTable" prefHeight="200.0" prefWidth="200.0" />
+            <Label text="Recent Transactions" textFill="#f8f6f6">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="transactionsTable" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </center>
 </BorderPane>

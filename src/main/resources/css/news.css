@@ -1,3 +1,46 @@
 .body {
     -fx-background-color: #0A014F;
 }
+.text {
+    -fx-text-fill: white;
+}
+.cell.text {
+    -fx-text-fill: white;
+}
+.text-field {
+    -fx-text-fill: white;
+}
+.text-field .text {
+    -fx-text-fill: white;
+}
+.text-field:empty .text {
+    -fx-effect: null ;
+}
+.text-field, .text-field:focused {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+}
+.table-view {
+    -fx-background-color: #0A014F;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+}
+.column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+.table-view-row {
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+    -fx-background-color: #0A014F;
+}
+.table-view .column-header {
+    -fx-background-color: #0A014F;
+}
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
