@@ -7,7 +7,7 @@
 
 <BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="774.0" styleClass="body" stylesheets="@../css/settings.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.psu.lionx.controllers.SettingsController">
    <top>
-      <Label text="TEMP SETTINGS" textFill="#fffefe" BorderPane.alignment="CENTER">
+      <Label text="Settings" textFill="#fffefe" BorderPane.alignment="CENTER">
          <font>
             <Font size="31.0" />
          </font>

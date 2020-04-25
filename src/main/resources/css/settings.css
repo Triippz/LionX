@@ -1,3 +1,7 @@
 .body {
     -fx-background-color: #0A014F;
 }
+
+.button {
+    -fx-background-color: red;
+}
