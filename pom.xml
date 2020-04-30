@@ -183,22 +183,18 @@
                 </configuration>
             </plugin>
             <plugin>
-                <!-- DO NOT run the shade plugin from the IDE, go to the project directory and use "MVN PACKAGES" command -->
-                <!-- Two packages will be spit out, the "original" one, is the non-fat-jar one, aka we dont use that one -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>${shade.version}</version>
                 <executions>
-                    <!-- Run shade goal on package phase -->
                     <execution>
-                        <phase>package</phase>
                         <goals>
                             <goal>shade</goal>
                         </goals>
                         <configuration>
+                            <shadedArtifactAttached>true</shadedArtifactAttached>
                             <transformers>
-                                <!-- add Main-Class to manifest file -->
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation=
+                                                     "org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>edu.psu.lionx.LionXApplication</mainClass>
                                 </transformer>
                             </transformers>
@@ -208,4 +204,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

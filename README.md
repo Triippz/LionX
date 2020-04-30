@@ -44,15 +44,18 @@ If using IntelliJ on MacOS, you need to ensure you point your VM options
 to any applicable JavaFX modules you wish to use. This should suffice on mac.
 
 ```bash
---module-path lib/javafx-sdk-11.0.2/lib --add-modules=javafx.controls,javafx.fxml, javafx.web
+--module-path lib/javafx-sdk-11.0.2/lib --add-modules=javafx.controls,javafx.fxml,javafx.web --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED
 ```
-
 It may be easier just to run the Maven goals from within IntelliJ for debugging and running.
 
+Another alternative, is from the terminal. Ensure you have maven installed and run the javafx goal
+```bash
+mvn javafx:run
+```
 
 ## Build
 
-Run the maven goal to build a 'Fat Jar'
+Run the maven goal to build a 'Fat Jar' (not configured)
 ```bash
 mvn package
 ```
